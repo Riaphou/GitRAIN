@@ -1,77 +1,77 @@
 [gd_scene load_steps=21 format=3 uid="uid://deyvhqe16wteb"]
 
-[ext_resource type="Texture2D" uid="uid://biam62ny188gc" path="res://project-rain/snowman_JSP_frr.png" id="1_k3rcp"]
+[ext_resource type="Texture2D" uid="uid://biam62ny188gc" path="res://project-rain/sprites/snowman_JSP_frr.png" id="1_qtc8a"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0e48y"]
-atlas = ExtResource("1_k3rcp")
+atlas = ExtResource("1_qtc8a")
 region = Rect2(0, 416, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_epypp"]
-atlas = ExtResource("1_k3rcp")
+atlas = ExtResource("1_qtc8a")
 region = Rect2(0, 448, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0hol4"]
-atlas = ExtResource("1_k3rcp")
+atlas = ExtResource("1_qtc8a")
 region = Rect2(0, 480, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q6r6c"]
-atlas = ExtResource("1_k3rcp")
+atlas = ExtResource("1_qtc8a")
 region = Rect2(0, 512, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kdubu"]
-atlas = ExtResource("1_k3rcp")
+atlas = ExtResource("1_qtc8a")
 region = Rect2(0, 544, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d21ai"]
-atlas = ExtResource("1_k3rcp")
+atlas = ExtResource("1_qtc8a")
 region = Rect2(0, 576, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rj586"]
-atlas = ExtResource("1_k3rcp")
+atlas = ExtResource("1_qtc8a")
 region = Rect2(0, 608, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4d7sh"]
-atlas = ExtResource("1_k3rcp")
+atlas = ExtResource("1_qtc8a")
 region = Rect2(0, 640, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ir8iy"]
-atlas = ExtResource("1_k3rcp")
+atlas = ExtResource("1_qtc8a")
 region = Rect2(0, 672, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hqns4"]
-atlas = ExtResource("1_k3rcp")
+atlas = ExtResource("1_qtc8a")
 region = Rect2(0, 704, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x0ka3"]
-atlas = ExtResource("1_k3rcp")
+atlas = ExtResource("1_qtc8a")
 region = Rect2(0, 736, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0h7mo"]
-atlas = ExtResource("1_k3rcp")
+atlas = ExtResource("1_qtc8a")
 region = Rect2(0, 768, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nr8wp"]
-atlas = ExtResource("1_k3rcp")
+atlas = ExtResource("1_qtc8a")
 region = Rect2(0, 32, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d2bti"]
-atlas = ExtResource("1_k3rcp")
+atlas = ExtResource("1_qtc8a")
 region = Rect2(0, 64, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ta5nu"]
-atlas = ExtResource("1_k3rcp")
+atlas = ExtResource("1_qtc8a")
 region = Rect2(0, 96, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_flf07"]
-atlas = ExtResource("1_k3rcp")
+atlas = ExtResource("1_qtc8a")
 region = Rect2(0, 128, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k73cj"]
-atlas = ExtResource("1_k3rcp")
+atlas = ExtResource("1_qtc8a")
 region = Rect2(0, 160, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rjqkl"]
-atlas = ExtResource("1_k3rcp")
+atlas = ExtResource("1_qtc8a")
 region = Rect2(0, 192, 16, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fs4d3"]
@@ -144,5 +144,7 @@ animations = [{
 [node name="Node2D" type="Node2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_fs4d3")
-animation = &"Mort"
+animation = &"marche"
+frame_progress = 0.92562956

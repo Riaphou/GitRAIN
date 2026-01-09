@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://biam62ny188gc"
-path="res://.godot/imported/snowman_JSP_frr.png-379151db3fdb981c79fd130ed8e46ce3.ctex"
+path="res://.godot/imported/snowman_JSP_frr.png-ee5b49901841093aa9662ef9a581d10c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://project-rain/snowman_JSP_frr.png"
-dest_files=["res://.godot/imported/snowman_JSP_frr.png-379151db3fdb981c79fd130ed8e46ce3.ctex"]
+source_file="res://project-rain/sprites/snowman_JSP_frr.png"
+dest_files=["res://.godot/imported/snowman_JSP_frr.png-ee5b49901841093aa9662ef9a581d10c.ctex"]
 
 [params]
 
