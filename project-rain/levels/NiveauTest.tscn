@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://54ayxym8itg4"]
+[gd_scene load_steps=3 format=3 uid="uid://bxws8krjulaxb"]
+
+[ext_resource type="PackedScene" uid="uid://qt7sh7ulvpe2" path="res://project-rain/objets/Joueur.tscn" id="1_lxc0d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lxc0d"]
 size = Vector2(1256.5, 310)
@@ -11,3 +13,6 @@ position = Vector2(500, 700)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(-5, 6)
 shape = SubResource("RectangleShape2D_lxc0d")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_lxc0d")]
+position = Vector2(165, 415)
