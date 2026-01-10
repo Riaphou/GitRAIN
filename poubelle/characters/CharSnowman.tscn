@@ -1,6 +1,6 @@
 [gd_scene load_steps=21 format=3 uid="uid://deyvhqe16wteb"]
 
-[ext_resource type="Texture2D" uid="uid://biam62ny188gc" path="res://project-rain/sprites/snowman_JSP_frr.png" id="1_qe0h6"]
+[ext_resource type="Texture2D" uid="uid://biam62ny188gc" path="res://poubelle/sprites/snowman_JSP_frr.png" id="1_qe0h6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0e48y"]
 atlas = ExtResource("1_qe0h6")

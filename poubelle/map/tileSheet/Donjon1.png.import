@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dt3mlkx0us23b"
-path="res://.godot/imported/Donjon1.png-d6999a94c0a81ae982c2689f5efd6927.ctex"
+path="res://.godot/imported/Donjon1.png-9ebad65bcf2c378c45289daa32741499.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://project-rain/map/tileSheet/Donjon1.png"
-dest_files=["res://.godot/imported/Donjon1.png-d6999a94c0a81ae982c2689f5efd6927.ctex"]
+source_file="res://poubelle/map/tileSheet/Donjon1.png"
+dest_files=["res://.godot/imported/Donjon1.png-9ebad65bcf2c378c45289daa32741499.ctex"]
 
 [params]
 

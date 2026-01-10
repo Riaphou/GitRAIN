@@ -1,45 +1,45 @@
 [gd_scene load_steps=13 format=3 uid="uid://eemx0ktt8vi7"]
 
-[ext_resource type="Texture2D" uid="uid://biam62ny188gc" path="res://project-rain/sprites/snowman_JSP_frr.png" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://biam62ny188gc" path="res://poubelle/sprites/snowman_JSP_frr.png" id="1_0lfmf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0e48y"]
-atlas = ExtResource("1_wtcfe")
+atlas = ExtResource("1_0lfmf")
 region = Rect2(0, 256, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_epypp"]
-atlas = ExtResource("1_wtcfe")
+atlas = ExtResource("1_0lfmf")
 region = Rect2(0, 288, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0hol4"]
-atlas = ExtResource("1_wtcfe")
+atlas = ExtResource("1_0lfmf")
 region = Rect2(0, 320, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q6r6c"]
-atlas = ExtResource("1_wtcfe")
+atlas = ExtResource("1_0lfmf")
 region = Rect2(0, 352, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kdubu"]
-atlas = ExtResource("1_wtcfe")
+atlas = ExtResource("1_0lfmf")
 region = Rect2(0, 32, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d21ai"]
-atlas = ExtResource("1_wtcfe")
+atlas = ExtResource("1_0lfmf")
 region = Rect2(0, 64, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rj586"]
-atlas = ExtResource("1_wtcfe")
+atlas = ExtResource("1_0lfmf")
 region = Rect2(0, 96, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4d7sh"]
-atlas = ExtResource("1_wtcfe")
+atlas = ExtResource("1_0lfmf")
 region = Rect2(0, 128, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ir8iy"]
-atlas = ExtResource("1_wtcfe")
+atlas = ExtResource("1_0lfmf")
 region = Rect2(0, 160, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hqns4"]
-atlas = ExtResource("1_wtcfe")
+atlas = ExtResource("1_0lfmf")
 region = Rect2(0, 192, 16, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_x0ka3"]

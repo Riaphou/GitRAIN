@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://ce4wt316ac8kt"]
 
-[ext_resource type="Texture2D" uid="uid://biam62ny188gc" path="res://project-rain/sprites/snowman_JSP_frr.png" id="1_5cunp"]
-[ext_resource type="Script" uid="uid://bobgkn7r6qeeh" path="res://project-rain/actors/scripts_personnages/homme_des_neiges.gd" id="1_hsra8"]
+[ext_resource type="Texture2D" uid="uid://biam62ny188gc" path="res://poubelle/sprites/snowman_JSP_frr.png" id="1_5cunp"]
+[ext_resource type="Script" uid="uid://bobgkn7r6qeeh" path="res://poubelle/actors/scripts_personnages/homme_des_neiges.gd" id="1_hsra8"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5cunp"]
 
