@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://b1goihqdolsce"]
-
-[ext_resource type="PackedScene" uid="uid://ce4wt316ac8kt" path="res://poubelle/actors/Homme des neiges.tscn" id="1_efl1o"]
-
-[node name="Node2D" type="Node2D"]
-
-[node name="Homme_neige" parent="." instance=ExtResource("1_efl1o")]
-position = Vector2(-29, 316)
-scale = Vector2(6, 6)
