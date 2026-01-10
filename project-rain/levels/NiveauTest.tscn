@@ -15,5 +15,4 @@ position = Vector2(-5, 6)
 shape = SubResource("RectangleShape2D_lxc0d")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_lxc0d")]
-position = Vector2(165, 415)
-script = null
+position = Vector2(546.99994, 242.99998)
