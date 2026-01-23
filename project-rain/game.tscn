@@ -18,8 +18,9 @@ visible = false
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(306, 194, 306, 288, 241, 290, 241, 386, 306, 384, 304, 479, 367, 483, 370, 385, 622, 385, 624, 290, 369, 290, 369, 194)
 
-[node name="boîte de dialogue" parent="." instance=ExtResource("3_fsql1")]
-
 [node name="Jamyson" parent="." instance=ExtResource("4_hhsqc")]
 position = Vector2(196, 344)
 scale = Vector2(2, 2)
+
+[node name="boîte de dialogue" parent="." instance=ExtResource("3_fsql1")]
+visible = true

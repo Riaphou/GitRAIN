@@ -1,6 +1,6 @@
 [gd_scene load_steps=33 format=4 uid="uid://campp3q3e7ojl"]
 
-[ext_resource type="Script" path="res://project-rain/map.gd" id="1_ieeee"]
+[ext_resource type="Script" uid="uid://bwpkfxixqsnik" path="res://project-rain/map.gd" id="1_ieeee"]
 [ext_resource type="Texture2D" uid="uid://wmooy0rp6k7m" path="res://project-rain/sprites/basetilest.png" id="1_w3jb3"]
 [ext_resource type="Texture2D" uid="uid://diqg3slqppbj0" path="res://project-rain/sprites/wall.png" id="2_va62t"]
 [ext_resource type="Texture2D" uid="uid://bbwknfocq86hs" path="res://project-rain/sprites/utilisables/plante1.png" id="3_dj3d3"]
