@@ -1,14 +1,68 @@
-[gd_scene format=3 uid="uid://pacsmfpp62jv"]
+[gd_scene load_steps=4 format=3 uid="uid://pacsmfpp62jv"]
 
-[node name="BoiteDialogue" type="Control"]
-layout_mode = 3
-anchors_preset = 15
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w0i2v"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="FontFile" id="FontFile_w0i2v"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+
+[sub_resource type="FontVariation" id="FontVariation_uahc0"]
+
+[node name="boîte de dialogue" type="CanvasLayer"]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = -241.0
 grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
 
-[node name="Panel" type="Panel" parent="."]
-layout_mode = 0
-offset_right = 165.0
-offset_bottom = 328.0
+[node name="Panel" type="Panel" parent="MarginContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_w0i2v")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Panel" type="Panel" parent="MarginContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("FontFile_w0i2v")
+text = "something btw                       "
+
+[node name="Label2" type="Label" parent="MarginContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_fonts/font = SubResource("FontVariation_uahc0")
+theme_override_font_sizes/font_size = 40
+text = "Nah i'd win"
+
+[node name="Label3" type="Label" parent="MarginContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("FontFile_w0i2v")
+text = "hello world"
