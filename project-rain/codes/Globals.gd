@@ -1,7 +1,9 @@
 extends Node
+var nbclics = 0
 
-var nbClics = 0
-var dialogInQueue = 0
+func _ready():
+	pass
+
 
 var positionPersonage = Vector2(0,0)
 var objetID = 0

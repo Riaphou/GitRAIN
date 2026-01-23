@@ -11,19 +11,12 @@ config_version=5
 [application]
 
 config/name="Project-RAIN"
-run/main_scene="uid://campp3q3e7ojl"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Global="*res://project-rain/codes/Globals.gd"
-
-[display]
-
-window/size/viewport_width=672
-window/size/viewport_height=672
-window/stretch/mode="viewport"
 
 [dotnet]
 
