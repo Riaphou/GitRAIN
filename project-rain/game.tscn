@@ -19,9 +19,6 @@ visible = false
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(306, 194, 306, 288, 241, 290, 241, 386, 306, 384, 304, 479, 367, 483, 370, 385, 622, 385, 624, 290, 369, 290, 369, 194)
 
-[node name="boîte de dialogue" parent="." instance=ExtResource("3_fsql1")]
-visible = false
-
 [node name="Jamyson" parent="." instance=ExtResource("4_hhsqc")]
 position = Vector2(196, 344)
 scale = Vector2(2, 2)
@@ -29,14 +26,30 @@ scale = Vector2(2, 2)
 [node name="objet" parent="." instance=ExtResource("5_emrwl")]
 position = Vector2(110, 457)
 IDobjet = 2
-cond = "start"
 
 [node name="objet2" parent="." instance=ExtResource("5_emrwl")]
 position = Vector2(452, 435)
 IDobjet = 3
-cond = "start"
 
 [node name="objet3" parent="." instance=ExtResource("5_emrwl")]
 position = Vector2(275, 583)
 IDobjet = 1
-cond = "casier1"
+
+[node name="dialogue" parent="." instance=ExtResource("3_fsql1")]
+visible = false
+
+[node name="objet4" parent="." instance=ExtResource("5_emrwl")]
+position = Vector2(411, 616)
+IDobjet = 4
+
+[node name="objet5" parent="." instance=ExtResource("5_emrwl")]
+position = Vector2(421, 508)
+IDobjet = 5
+
+[node name="objet6" parent="." instance=ExtResource("5_emrwl")]
+position = Vector2(405, 145)
+IDobjet = 6
+
+[node name="objet7" parent="." instance=ExtResource("5_emrwl")]
+position = Vector2(182, 171)
+IDobjet = 7

@@ -14,7 +14,7 @@ border_color = Color(1, 1, 1, 1)
 [sub_resource type="FontVariation" id="FontVariation_uahc0"]
 base_font = ExtResource("2_6j6lp")
 
-[node name="boîte de dialogue" type="CanvasLayer"]
+[node name="dialogue" type="CanvasLayer"]
 script = ExtResource("1_at1an")
 
 [node name="textBoxContainer" type="MarginContainer" parent="."]

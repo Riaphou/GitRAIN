@@ -15,6 +15,22 @@ func _input_event(viewport, event, shape_idx):
 	if event.is_action_pressed("click") and Global.condApparition[cond]:
 		visible = true
 		if Global.onTextBox == false and abs(position.x-Global.positionPersonage.x) < 20 and abs(position.y-Global.positionPersonage.y) < 20:
+			var text = get_parent().get_node("dialogue")
+			if IDobjet==1:
+				text.queue_text("Canard en plastique")
+			elif IDobjet==2:
+				text.queue_text("Vieille boite de nouilles instentanés")
+			elif IDobjet==3:
+				text.queue_text("Badge")
+			elif IDobjet==4:
+				text.queue_text("Clef")
+			elif IDobjet==5:
+				text.queue_text("Dossier")
+			elif IDobjet==6:
+				text.queue_text("Goblet sale")
+			elif IDobjet==7:
+				text.queue_text("Goblet de mélange douteux")
+			
 			var c = Global.objetID
 			Global.objetID = IDobjet
 			IDobjet = c

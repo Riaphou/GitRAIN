@@ -108,8 +108,6 @@ animations = [{
 [node name="objet" type="Area2D"]
 scale = Vector2(2, 2)
 script = ExtResource("1_orfgr")
-IDobjet = null
-cond = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_orfgr")
