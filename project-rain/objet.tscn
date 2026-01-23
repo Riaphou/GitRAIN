@@ -1,8 +1,118 @@
-[gd_scene load_steps=2 format=3 uid="uid://dtextpv2htc2s"]
+[gd_scene load_steps=13 format=3 uid="uid://dtextpv2htc2s"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qeoye"]
+[ext_resource type="Script" uid="uid://dr8uqk30a0m74" path="res://project-rain/codes/objet.gd" id="1_orfgr"]
+[ext_resource type="Texture2D" uid="uid://dr3xnxtyo25oi" path="res://project-rain/sprites/objets/objets.png" id="1_r8o2g"]
 
-[node name="objet" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_orfgr"]
+size = Vector2(18.5, 18)
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = SubResource("AtlasTexture_qeoye")
+[sub_resource type="AtlasTexture" id="AtlasTexture_orfgr"]
+atlas = ExtResource("1_r8o2g")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m4kpf"]
+atlas = ExtResource("1_r8o2g")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_asxbe"]
+atlas = ExtResource("1_r8o2g")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_52wgo"]
+atlas = ExtResource("1_r8o2g")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e0env"]
+atlas = ExtResource("1_r8o2g")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qhl1a"]
+atlas = ExtResource("1_r8o2g")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n3dv2"]
+atlas = ExtResource("1_r8o2g")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r8o2g"]
+atlas = ExtResource("1_r8o2g")
+region = Rect2(48, 12, 2, 2)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r8o2g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_orfgr")
+}],
+"loop": true,
+"name": &"badge",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m4kpf")
+}],
+"loop": true,
+"name": &"canard",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_asxbe")
+}],
+"loop": true,
+"name": &"clef",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_52wgo")
+}],
+"loop": true,
+"name": &"dossier",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e0env")
+}],
+"loop": true,
+"name": &"goblet",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qhl1a")
+}],
+"loop": true,
+"name": &"goblt_rempli",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n3dv2")
+}],
+"loop": true,
+"name": &"nouilles",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r8o2g")
+}],
+"loop": true,
+"name": &"vide",
+"speed": 5.0
+}]
+
+[node name="objet" type="Area2D"]
+scale = Vector2(2, 2)
+script = ExtResource("1_orfgr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.25, 0)
+shape = SubResource("RectangleShape2D_orfgr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r8o2g")
+animation = &"badge"
