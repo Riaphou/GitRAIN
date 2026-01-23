@@ -24,12 +24,12 @@ var text_queue = [] # la liste des dialogue
 func _ready():#le dé0marrage
 	print("ready")
 	hide_textbook()
-	queue_text("damn, that piece of shit took me like 2 hours ")
+	queue_text("damn, that piece of shit took few hours ")
 	queue_text("but nox it's finished ")
 	queue_text("je ne sais pas comment meubler")
 	queue_text("Nah, i'd win")
 
-func _process(delta: float) -> void:#tt du long de la game
+func _process(_delta: float) -> void:#tt du long de la game
 	match  current_state:# décide quoi faire en fonction de l'état
 		state.ready:
 			if !text_queue.is_empty(): # affiche un dialogue s'il y en a un 
@@ -82,3 +82,4 @@ func change_state(next_stat):  # change l'etat
 		state.finished:
 			print("finished")
 			
+	

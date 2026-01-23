@@ -4,7 +4,7 @@
 [ext_resource type="FontFile" uid="uid://c3ns57ic4th7" path="res://project-rain/font/font.ttf" id="2_6j6lp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w0i2v"]
-bg_color = Color(0, 0, 0, 1)
+bg_color = Color(0.42579153, 0.33251882, 0.41096908, 1)
 border_width_left = 4
 border_width_top = 4
 border_width_right = 4
@@ -54,7 +54,6 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 theme_override_fonts/font = SubResource("FontVariation_uahc0")
 theme_override_font_sizes/font_size = 40
-text = "*"
 
 [node name="text" type="Label" parent="textBoxContainer/MarginContainer/HBoxContainer"]
 custom_minimum_size = Vector2(0, 7)
@@ -63,7 +62,6 @@ size_flags_horizontal = 3
 size_flags_vertical = 1
 theme_override_fonts/font = SubResource("FontVariation_uahc0")
 theme_override_font_sizes/font_size = 50
-text = "Nah i'd win"
 autowrap_mode = 3
 clip_text = true
 
@@ -73,4 +71,3 @@ size_flags_horizontal = 8
 size_flags_vertical = 8
 theme_override_fonts/font = SubResource("FontVariation_uahc0")
 theme_override_font_sizes/font_size = 40
-text = "*"
