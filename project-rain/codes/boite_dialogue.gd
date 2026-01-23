@@ -55,7 +55,7 @@ func hide_textbook(): # cache la boite de dialogue
 	textbox_container.hide()
 
 func show_textbox(): # affiche la boite de dialogue
-	start_symbol.text = "*"
+	start_symbol.text = ">"
 	textbox_container.show()
 
 func display_text(): # affiche le texte
