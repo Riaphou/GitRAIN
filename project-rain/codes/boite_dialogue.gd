@@ -25,6 +25,7 @@ func _ready():#le dé0marrage
 	print("ready")
 	hide_textbook()
 
+
 func _process(_delta: float) -> void:#tt du long de la game
 	match  current_state:# décide quoi faire en fonction de l'état
 		state.ready:
