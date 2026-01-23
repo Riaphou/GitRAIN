@@ -7,4 +7,3 @@ func _process(delta: float) -> void:
 		Global.nbClics = Global.nbClics+1
 		if Global.nbClics == 4:
 			$"boîte de dialogue".queue_text("Bonjours les gens\nCool")
-			

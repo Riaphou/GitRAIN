@@ -1,3 +1,8 @@
-[gd_scene format=3 uid="uid://dtextpv2htc2s"]
+[gd_scene load_steps=2 format=3 uid="uid://dtextpv2htc2s"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qeoye"]
 
 [node name="objet" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_qeoye")
