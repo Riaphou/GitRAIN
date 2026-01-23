@@ -15,7 +15,7 @@ func _ready():
 func _physics_process(_delta):
 	if ((ax-global_position.x)**2+(ay-global_position.y)**2)**0.5 <10: # Vérifie si le joueur est arrivé, la valeur à la fin est le nb de pixels de distance avec la cible oèu il s'arrête
 		stop()
-	if Input.is_action_just_pressed("click"):
+	if Input.is_action_just_pressed("click") and Global.onTextBox == false:
 		Global.nbClics += 1
 		ax=get_global_mouse_position().x
 		ay=get_global_mouse_position().y
