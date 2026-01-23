@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dcy4po8b6p7sv"]
+[gd_scene load_steps=5 format=3 uid="uid://df380d7vugrcq"]
 
 [ext_resource type="PackedScene" uid="uid://campp3q3e7ojl" path="res://project-rain/map.tscn" id="1_dff61"]
 [ext_resource type="Script" uid="uid://c1jsc14oovymr" path="res://project-rain/testRoomCode.gd" id="1_n1uv3"]

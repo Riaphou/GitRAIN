@@ -48,6 +48,7 @@ func hide_textbook(): # cache la boite de dialogue
 	end_symbol.text = ""
 	label.text = ""
 	textbox_container.hide()
+	Global.onTextBox = false
 
 func show_textbox(): # affiche la boite de dialogue
 	start_symbol.text = ">"
@@ -62,6 +63,7 @@ func display_text(): # affiche le texte
 	label.visible_ratio = 0.0
 	tween.tween_property(label, "visible_ratio", 1.0, len(next_text)*speed).set_trans(Tween.TRANS_LINEAR)
 	tween.finished.connect(_on_tween_finished)
+	Global.onTextBox = true
 	
 func _on_tween_finished(): #quand le texte a fini de déffiler
 	end_symbol.text = "v"
