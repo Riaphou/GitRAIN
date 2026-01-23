@@ -14,6 +14,10 @@ config/name="Project-RAIN"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*res://project-rain/codes/Globals.gd"
+
 [dotnet]
 
 project/assembly_name="Project-RAIN"
