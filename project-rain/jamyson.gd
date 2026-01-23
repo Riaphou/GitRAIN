@@ -14,12 +14,12 @@ func _ready():
 func _physics_process(delta):
 	if ((ax-global_position.x)**2+(ay-global_position.y)**2)**0.5 <10: # Vérifie si le joueur est arrivé, la valeur à la fin est le nb de pixels de distance avec la cible oèu il s'arrête
 		stop()
-	if Input.is_action_just_pressed("click") and ax==0 and ay==0:
+	if Input.is_action_just_pressed("click"):
 		ax=get_global_mouse_position().x
 		ay=get_global_mouse_position().y
 		velocity.x = ax-global_position.x
 		velocity.y = ay-global_position.y
-		velocity = velocity.normalized() * 300 #Changez la valeur à la fin modifie la vitesse du joueur
+		velocity = velocity.normalized() * 150 #Changez la valeur à la fin modifie la vitesse du joueur
 	if abs(velocity.y) < abs(velocity.x) and velocity!= Vector2.ZERO :
 		if velocity.x > 0:
 			$AnimationPlayer.play("right")
