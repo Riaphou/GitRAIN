@@ -1,4 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://pacsmfpp62jv"]
+[gd_scene load_steps=5 format=3 uid="uid://pacsmfpp62jv"]
+
+[ext_resource type="Script" uid="uid://ddmla7lu2l8gd" path="res://project-rain/codes/boite_dialogue.gd" id="1_at1an"]
+[ext_resource type="FontFile" uid="uid://c3ns57ic4th7" path="res://project-rain/font/font.ttf" id="2_6j6lp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w0i2v"]
 bg_color = Color(0, 0, 0, 1)
@@ -8,23 +11,18 @@ border_width_right = 4
 border_width_bottom = 4
 border_color = Color(1, 1, 1, 1)
 
-[sub_resource type="FontFile" id="FontFile_w0i2v"]
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-
 [sub_resource type="FontVariation" id="FontVariation_uahc0"]
+base_font = ExtResource("2_6j6lp")
 
 [node name="boîte de dialogue" type="CanvasLayer"]
+script = ExtResource("1_at1an")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="textBoxContainer" type="MarginContainer" parent="."]
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -241.0
+offset_top = -161.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/margin_left = 16
@@ -32,37 +30,47 @@ theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 16
 theme_override_constants/margin_bottom = 16
 
-[node name="Panel" type="Panel" parent="MarginContainer"]
+[node name="Panel" type="Panel" parent="textBoxContainer"]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_w0i2v")
 
-[node name="MarginContainer" type="MarginContainer" parent="MarginContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="textBoxContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = 8
 theme_override_constants/margin_top = 8
 theme_override_constants/margin_right = 8
 theme_override_constants/margin_bottom = 8
 
-[node name="Panel" type="Panel" parent="MarginContainer/MarginContainer"]
+[node name="Panel" type="Panel" parent="textBoxContainer/MarginContainer"]
+visible = false
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="textBoxContainer/MarginContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="MarginContainer/MarginContainer/HBoxContainer"]
+[node name="start" type="Label" parent="textBoxContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = SubResource("FontFile_w0i2v")
-text = "something btw                       "
-
-[node name="Label2" type="Label" parent="MarginContainer/MarginContainer/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
+size_flags_horizontal = 0
 size_flags_vertical = 0
 theme_override_fonts/font = SubResource("FontVariation_uahc0")
 theme_override_font_sizes/font_size = 40
-text = "Nah i'd win"
+text = "*"
 
-[node name="Label3" type="Label" parent="MarginContainer/MarginContainer/HBoxContainer"]
+[node name="text" type="Label" parent="textBoxContainer/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(0, 7)
 layout_mode = 2
-theme_override_fonts/font = SubResource("FontFile_w0i2v")
-text = "hello world"
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_fonts/font = SubResource("FontVariation_uahc0")
+theme_override_font_sizes/font_size = 50
+text = "Nah i'd win"
+autowrap_mode = 3
+clip_text = true
+
+[node name="end" type="Label" parent="textBoxContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_fonts/font = SubResource("FontVariation_uahc0")
+theme_override_font_sizes/font_size = 40
+text = "*"
