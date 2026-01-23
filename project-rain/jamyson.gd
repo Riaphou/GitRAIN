@@ -16,6 +16,19 @@ func _physics_process(delta):
 		velocity.x = ax-global_position.x
 		velocity.y = ay-global_position.y
 		velocity = velocity.normalized() * 300 #Changez la valeur à la fin modifie la vitesse du joueur
+	if abs(velocity.y) < abs(velocity.x) and velocity!= Vector2.ZERO :
+		if velocity.x > 0:
+			$AnimationPlayer.play("right")
+		else:
+			$AnimationPlayer.play("left")
+	elif abs(velocity.x) < abs(velocity.y) and velocity!= Vector2.ZERO :
+		if velocity.y < 0:
+			$AnimationPlayer.play("up")
+		else:
+			$AnimationPlayer.play("down")
+	elif velocity== Vector2.ZERO:
+		$AnimationPlayer.stop()
+			
 	move_and_slide()
 	
 		
