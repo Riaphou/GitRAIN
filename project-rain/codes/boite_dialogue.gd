@@ -23,6 +23,7 @@ var text_queue = [] # la liste des dialogue
 #les fonction
 func _ready():#le démarrage
 	hide_textbook()
+	visible = true
 
 func _process(_delta: float) -> void:#tt du long de la game
 	match  current_state:# décide quoi faire en fonction de l'état

@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dcy4po8b6p7sv"]
+[gd_scene load_steps=6 format=3 uid="uid://dcy4po8b6p7sv"]
 
 [ext_resource type="PackedScene" uid="uid://campp3q3e7ojl" path="res://project-rain/map.tscn" id="1_dff61"]
 [ext_resource type="Script" uid="uid://c1jsc14oovymr" path="res://project-rain/codes/testRoomCode.gd" id="1_n1uv3"]
 [ext_resource type="PackedScene" uid="uid://pacsmfpp62jv" path="res://project-rain/boite_dialogue.tscn" id="3_fsql1"]
 [ext_resource type="PackedScene" uid="uid://b2ln7ca172tuu" path="res://project-rain/jamyson.tscn" id="4_hhsqc"]
+[ext_resource type="PackedScene" uid="uid://dtextpv2htc2s" path="res://project-rain/objet.tscn" id="5_emrwl"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_n1uv3")
@@ -19,7 +20,23 @@ visible = false
 polygon = PackedVector2Array(306, 194, 306, 288, 241, 290, 241, 386, 306, 384, 304, 479, 367, 483, 370, 385, 622, 385, 624, 290, 369, 290, 369, 194)
 
 [node name="boîte de dialogue" parent="." instance=ExtResource("3_fsql1")]
+visible = false
 
 [node name="Jamyson" parent="." instance=ExtResource("4_hhsqc")]
 position = Vector2(196, 344)
 scale = Vector2(2, 2)
+
+[node name="objet" parent="." instance=ExtResource("5_emrwl")]
+position = Vector2(110, 457)
+IDobjet = 2
+cond = "start"
+
+[node name="objet2" parent="." instance=ExtResource("5_emrwl")]
+position = Vector2(452, 435)
+IDobjet = 3
+cond = "start"
+
+[node name="objet3" parent="." instance=ExtResource("5_emrwl")]
+position = Vector2(275, 583)
+IDobjet = 1
+cond = "casier1"

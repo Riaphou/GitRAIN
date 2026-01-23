@@ -1,7 +1,8 @@
-[gd_scene load_steps=21 format=3 uid="uid://b2ln7ca172tuu"]
+[gd_scene load_steps=31 format=3 uid="uid://b2ln7ca172tuu"]
 
 [ext_resource type="Script" uid="uid://c6l50rrcbysu4" path="res://project-rain/jamyson.gd" id="1_kstw8"]
 [ext_resource type="Texture2D" uid="uid://bjme328ixff0k" path="res://project-rain/sprites/Jamyson.png" id="1_up3jd"]
+[ext_resource type="Texture2D" uid="uid://dr3xnxtyo25oi" path="res://project-rain/sprites/objets/objets.png" id="3_wmsex"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kstw8"]
 atlas = ExtResource("1_up3jd")
@@ -141,7 +142,107 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_up3jd"]
 size = Vector2(16, 11)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_r8o2g"]
+atlas = ExtResource("3_wmsex")
+region = Rect2(48, 12, 2, 2)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m4kpf"]
+atlas = ExtResource("3_wmsex")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n3dv2"]
+atlas = ExtResource("3_wmsex")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_orfgr"]
+atlas = ExtResource("3_wmsex")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_asxbe"]
+atlas = ExtResource("3_wmsex")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_52wgo"]
+atlas = ExtResource("3_wmsex")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e0env"]
+atlas = ExtResource("3_wmsex")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qhl1a"]
+atlas = ExtResource("3_wmsex")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_el8nd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r8o2g")
+}],
+"loop": true,
+"name": &"0",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m4kpf")
+}],
+"loop": true,
+"name": &"1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n3dv2")
+}],
+"loop": true,
+"name": &"2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_orfgr")
+}],
+"loop": true,
+"name": &"3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_asxbe")
+}],
+"loop": true,
+"name": &"4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_52wgo")
+}],
+"loop": true,
+"name": &"5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e0env")
+}],
+"loop": true,
+"name": &"6",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qhl1a")
+}],
+"loop": true,
+"name": &"7",
+"speed": 5.0
+}]
+
 [node name="Jamyson" type="CharacterBody2D"]
+position = Vector2(0, -9)
 script = ExtResource("1_kstw8")
 
 [node name="AnimationPlayer" type="AnimatedSprite2D" parent="."]
@@ -151,3 +252,9 @@ animation = &"down"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 9.5)
 shape = SubResource("RectangleShape2D_up3jd")
+
+[node name="objetImage" type="AnimatedSprite2D" parent="."]
+z_index = 1
+position = Vector2(0, -22)
+sprite_frames = SubResource("SpriteFrames_el8nd")
+animation = &"7"
