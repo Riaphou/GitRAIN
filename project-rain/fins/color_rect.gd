@@ -1,9 +1,12 @@
 extends ColorRect
+  
+
 
 func _ready():
 	var col = color
 	col.a = 0
 	color = col
+	$dialogue.queue_text("no way") # une ligne pr le petit noam qui me parle d'opti h24
 	await get_tree().create_timer(3).timeout
 	#Insére dialogues
 	for _i in range(100):

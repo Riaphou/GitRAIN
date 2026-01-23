@@ -9,9 +9,6 @@
 [node name="B" type="Sprite2D" parent="."]
 texture = ExtResource("2_sgg3j")
 
-[node name="dialogue" parent="." instance=ExtResource("2_qpknp")]
-layer = 2
-
 [node name="A" type="ColorRect" parent="."]
 visibility_layer = 4
 offset_left = -150.0
@@ -20,3 +17,6 @@ offset_right = 1823.0
 offset_bottom = 917.0
 color = Color(0, 0, 0, 1)
 script = ExtResource("1_jc6fn")
+
+[node name="dialogue" parent="A" instance=ExtResource("2_qpknp")]
+layer = 2
