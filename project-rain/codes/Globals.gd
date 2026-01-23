@@ -1,10 +1,7 @@
 extends Node
-var nbclics = 0
 
-func _ready():
-	pass
+var nbClics = 0
+var dialogInQueue = 0
 
-func _process(_delta):
-	if Input.is_action_just_pressed("click"):
-		nbclics += 1
-	
+var positionPersonage = Vector2(0,0)
+var objetID = 0

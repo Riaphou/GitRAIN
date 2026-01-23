@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://dcy4po8b6p7sv"]
+
+[ext_resource type="PackedScene" uid="uid://campp3q3e7ojl" path="res://project-rain/map.tscn" id="1_dff61"]
+[ext_resource type="Script" uid="uid://c1jsc14oovymr" path="res://project-rain/testRoomCode.gd" id="1_n1uv3"]
+[ext_resource type="PackedScene" uid="uid://pacsmfpp62jv" path="res://project-rain/boite_dialogue.tscn" id="3_fsql1"]
+[ext_resource type="PackedScene" uid="uid://b2ln7ca172tuu" path="res://project-rain/jamyson.tscn" id="4_hhsqc"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_n1uv3")
+
+[node name="map" parent="." instance=ExtResource("1_dff61")]
+position = Vector2(-19, 0)
+scale = Vector2(2, 2)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(306, 194, 306, 288, 241, 290, 241, 386, 306, 384, 304, 479, 367, 483, 370, 385, 622, 385, 624, 290, 369, 290, 369, 194)
+
+[node name="boîte de dialogue" parent="." instance=ExtResource("3_fsql1")]
+
+[node name="Jamyson" parent="." instance=ExtResource("4_hhsqc")]
+position = Vector2(196, 344)
+scale = Vector2(2, 2)
