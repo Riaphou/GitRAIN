@@ -4,10 +4,10 @@ const speed = 0.05
 
 
 #les nodes
-@onready var textbox_container = $textBoxContainer 
-@onready var start_symbol = $textBoxContainer/MarginContainer/HBoxContainer/start
+@onready var textbox_container = $textBoxContainer # la boite de dialogue
+@onready var start_symbol = $textBoxContainer/MarginContainer/HBoxContainer/start 
 @onready var end_symbol = $textBoxContainer/MarginContainer/HBoxContainer/end
-@onready var label = $textBoxContainer/MarginContainer/HBoxContainer/text
+@onready var label = $textBoxContainer/MarginContainer/HBoxContainer/text # le texte
 
 #les états
 enum state {
