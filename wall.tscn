@@ -1,3 +1,3 @@
-[gd_scene format=3 uid="uid://31om4rlop42j"]
+[gd_scene load_steps=0 format=3 uid="uid://31om4rlop42j"]
 
 [node name="Wall" type="Node2D"]
