@@ -1,5 +1,6 @@
-[gd_scene load_steps=19 format=3 uid="uid://b2ln7ca172tuu"]
+[gd_scene load_steps=21 format=3 uid="uid://b2ln7ca172tuu"]
 
+[ext_resource type="Script" uid="uid://c6l50rrcbysu4" path="res://project-rain/jamyson.gd" id="1_kstw8"]
 [ext_resource type="Texture2D" uid="uid://bjme328ixff0k" path="res://project-rain/sprites/Jamyson.png" id="1_up3jd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kstw8"]
@@ -137,10 +138,16 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_up3jd"]
+size = Vector2(16, 31)
+
 [node name="Jamyson" type="CharacterBody2D"]
+script = ExtResource("1_kstw8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ryiaq")
 animation = &"down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_up3jd")
