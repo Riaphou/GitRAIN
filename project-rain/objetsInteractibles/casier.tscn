@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bk7lbcykjiaha"]
+
+[ext_resource type="Texture2D" uid="uid://bkl8c3apdvqem" path="res://project-rain/sprites/utilisables/casiers.png" id="1_wgrmt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_04wsu"]
+size = Vector2(32, 39)
+
+[node name="Exemple" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_wgrmt")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -6.5)
+shape = SubResource("RectangleShape2D_04wsu")

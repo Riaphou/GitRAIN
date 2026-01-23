@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://88fsxryu7nnm"]
+
+[ext_resource type="Texture2D" uid="uid://1sta4bbh10v5" path="res://project-rain/sprites/utilisables/fontaine.png" id="1_ddmby"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_04wsu"]
+size = Vector2(16, 32)
+
+[node name="Exemple" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ddmby")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 18)
+shape = SubResource("RectangleShape2D_04wsu")
