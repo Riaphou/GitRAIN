@@ -24,10 +24,6 @@ var text_queue = [] # la liste des dialogue
 func _ready():#le dé0marrage
 	print("ready")
 	hide_textbook()
-	queue_text("damn, that piece of shit took few hours ")
-	queue_text("but nox it's finished ")
-	queue_text("je ne sais pas comment meubler")
-	queue_text("Nah, i'd win")
 
 func _process(_delta: float) -> void:#tt du long de la game
 	match  current_state:# décide quoi faire en fonction de l'état
@@ -35,13 +31,13 @@ func _process(_delta: float) -> void:#tt du long de la game
 			if !text_queue.is_empty(): # affiche un dialogue s'il y en a un 
 				display_text()
 		state.reading:
-			if Input.is_action_just_pressed("ui_accept"):# si on appui sur entrer pendant l'affichage skip le dialogue
+			if Input.is_action_just_pressed("click"):# si on appui sur entrer pendant l'affichage skip le dialogue
 				label.visible_ratio = 1.0
 				tween.kill()
 				end_symbol.text = "v"
 				change_state(state.finished)
 		state.finished:
-			if Input.is_action_just_pressed("ui_accept"):#quand l'affichage est finit en attend d'appuier entrer pr continuer
+			if Input.is_action_just_pressed("click"):#quand l'affichage est finit en attend d'appuier entrer pr continuer
 				change_state(state.ready)
 				hide_textbook()
 
