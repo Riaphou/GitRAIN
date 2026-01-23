@@ -7,6 +7,7 @@ func stop():
 	ax = 0
 	ay = 0
 	velocity = Vector2.ZERO
+	Global.positionPersonage = global_position
 
 func _ready():
 	pass
