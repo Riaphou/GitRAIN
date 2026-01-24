@@ -1,10 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://df380d7vugrcq"]
+[gd_scene load_steps=6 format=3 uid="uid://df380d7vugrcq"]
 
 [ext_resource type="PackedScene" uid="uid://campp3q3e7ojl" path="res://project-rain/map.tscn" id="1_dff61"]
 [ext_resource type="PackedScene" uid="uid://pacsmfpp62jv" path="res://project-rain/boite_dialogue.tscn" id="3_fsql1"]
 [ext_resource type="PackedScene" uid="uid://b2ln7ca172tuu" path="res://project-rain/jamyson.tscn" id="4_hhsqc"]
 [ext_resource type="PackedScene" uid="uid://dtextpv2htc2s" path="res://project-rain/objet.tscn" id="5_emrwl"]
-[ext_resource type="Texture2D" uid="uid://bw44h3yd625sj" path="res://project-rain/sprites/untitled.png" id="6_30bbl"]
 [ext_resource type="PackedScene" uid="uid://dct2x4cg8i4ff" path="res://project-rain/event.tscn" id="6_y6uul"]
 
 [node name="Game" type="Node2D"]
@@ -112,12 +111,12 @@ IDevent = "boss"
 lenDetection = 50
 
 [node name="event11" parent="events" instance=ExtResource("6_y6uul")]
-position = Vector2(83, 189)
+position = Vector2(74, 518)
 IDevent = "papier1"
 lenDetection = 50
 
 [node name="event12" parent="events" instance=ExtResource("6_y6uul")]
-position = Vector2(166, 258)
+position = Vector2(477, 637)
 IDevent = "papier2"
 lenDetection = 50
 
@@ -168,7 +167,7 @@ IDobjet = 4
 cond = "casier1"
 
 [node name="event21" parent="events" instance=ExtResource("6_y6uul")]
-position = Vector2(273, 393)
+position = Vector2(109, 269)
 IDevent = "poubelle"
 lenDetection = 50
 
@@ -176,11 +175,6 @@ lenDetection = 50
 position = Vector2(552, 412)
 IDobjet = 3
 cond = "veste"
-
-[node name="Untitled" type="Sprite2D" parent="events"]
-position = Vector2(273.00003, 393.00003)
-scale = Vector2(1.25, 1.25)
-texture = ExtResource("6_30bbl")
 
 [node name="objet6" parent="events" instance=ExtResource("5_emrwl")]
 position = Vector2(262, 431)

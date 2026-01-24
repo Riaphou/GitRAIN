@@ -4,6 +4,11 @@ var etape = 0
 
 func _ready() -> void:
 	pass
+	
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("click"):
+		Global.nbClics -= 1
+	
 
 func _process(delta: float) -> void:
 	if etape == -1:
@@ -20,9 +25,10 @@ func _process(delta: float) -> void:
 		etape = -3
 	elif etape == -3 and $Timer.is_stopped():
 		$fondu.newAnimation = "rien"
-		$fondu.jeu = "start"
+		$fondu.jeu = "rien"
 		$fondu.phase = 1
-		etape = 0
+		$Timer.start()
+		etape = 2
 		
 	elif etape == 1:
 		$fondu.newAnimation = "victoire"

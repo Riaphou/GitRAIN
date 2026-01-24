@@ -3,9 +3,11 @@ extends Area2D
 @export var IDevent = ""
 @export var lenDetection = 20
 
+
+signal action_declenchee(message)
 func _ready() -> void:
 	pass
-
+	
 func _process(delta: float) -> void:
 	pass
 	
@@ -131,6 +133,7 @@ func _input_event(viewport, event, shape_idx):
 		elif IDevent=="fenetre":
 			if Global.objetID == 4:
 				text.queue_text("Je peux enfin sortir ! Vive la liberté")
-				get_parent().get_node("cinematique").etape = 1
+				
 			else:
 				text.queue_text("Fenêtre fermée, bien sûr...")
+				get_parent().get_parent().get_node("cinematique").etape = 1
