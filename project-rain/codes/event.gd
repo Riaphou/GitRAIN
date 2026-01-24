@@ -20,9 +20,17 @@ func _input_event(viewport, event, shape_idx):
 		if IDevent=="cadre":
 			text.queue_text("Employé du mois, et deux de suite !")
 			
+		if IDevent=="poubelle":
+			if Global.objetID == 2:
+				text.queue_text("Ils devraient jeter leur cochonneries seuls !")
+				Global.condApparition["poubelle"] = true
+			else:
+				text.queue_text("Elle est assez moche mais c'est bien une poubelle.")
+			
 		if IDevent=="frigo":
 			text.queue_text("J'ai bien retenu qu'il ne fallait JAMAIS mettre la nouriture dans le frigo commun.")
 			text.queue_text('certaines personnes prennent trop au serieu le sens de "commun". ')
+			Global.condApparition["frigo"] = true
 		
 		if IDevent=="pc1":
 			text.queue_text("Pourquoi ce mettre soit même en fond d'écran ?.")
@@ -45,6 +53,9 @@ func _input_event(viewport, event, shape_idx):
 			
 		if IDevent=="eau":
 			text.queue_text("Mes idiots de collègues font toujours des pyramides en gobelets, et maintenant on ne peut plus boire.")
+			if Global.objetID == 6:
+				text.queue_text("J'ai rempli le verre...")
+				Global.condApparition["eau"] = true
 			
 		if IDevent=="asc":
 			text.queue_text("Ah, je vais descendre par l'ascenceur. Voilà ce que je dirait si ce n'etait pas un ascenceur à clé !")
@@ -83,6 +94,7 @@ func _input_event(viewport, event, shape_idx):
 			
 		elif IDevent=="blouson":
 			text.queue_text("Aucun respect ! mettre son manteau sur la table, comme ça...")
+			Global.condApparition["veste"] = true
 			
 		elif IDevent=="compteur":
 			text.queue_text("C'est le décompte avant le début de la fête, mais j'ai vraiment pas envie de voir mes collègues !")
@@ -107,6 +119,7 @@ func _input_event(viewport, event, shape_idx):
 		elif IDevent=="jus":
 			text.queue_text("Je pari que le propriétaire a craché dedans,")
 			text.queue_text("même si c'est plains de bonnes vitamines energétiques, je ne m'y risquerai pas.")
+			
 			
 		elif IDevent=="plante":
 			if Global.objetID == 7:

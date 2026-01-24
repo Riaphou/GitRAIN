@@ -12,5 +12,7 @@ var condApparition = {
 	"start" = true,
 	"frigo" = false,
 	"casier1" = false,
-	"carier2" = false
+	"veste" = false,
+	"poubelle" = false,
+	"eau" = false,
 }

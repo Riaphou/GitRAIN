@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://df380d7vugrcq"]
+[gd_scene load_steps=8 format=3 uid="uid://df380d7vugrcq"]
 
 [ext_resource type="PackedScene" uid="uid://campp3q3e7ojl" path="res://project-rain/map.tscn" id="1_dff61"]
 [ext_resource type="Script" uid="uid://c1jsc14oovymr" path="res://project-rain/codes/testRoomCode.gd" id="1_n1uv3"]
 [ext_resource type="PackedScene" uid="uid://pacsmfpp62jv" path="res://project-rain/boite_dialogue.tscn" id="3_fsql1"]
 [ext_resource type="PackedScene" uid="uid://b2ln7ca172tuu" path="res://project-rain/jamyson.tscn" id="4_hhsqc"]
 [ext_resource type="PackedScene" uid="uid://dtextpv2htc2s" path="res://project-rain/objet.tscn" id="5_emrwl"]
+[ext_resource type="Texture2D" uid="uid://bw44h3yd625sj" path="res://project-rain/sprites/untitled.png" id="6_30bbl"]
 [ext_resource type="PackedScene" uid="uid://dct2x4cg8i4ff" path="res://project-rain/event.tscn" id="6_y6uul"]
 
 [node name="Game" type="Node2D"]
@@ -27,15 +28,10 @@ IDevent = "fenetre"
 lenDetection = 50
 
 [node name="casier1" parent="events" instance=ExtResource("6_y6uul")]
-position = Vector2(444, 374)
-scale = Vector2(2, 4)
+position = Vector2(460, 374)
+scale = Vector2(4, 4)
 IDevent = "casier1"
 lenDetection = 50
-
-[node name="casier2" parent="events" instance=ExtResource("6_y6uul")]
-position = Vector2(477, 373)
-scale = Vector2(2, 4)
-IDevent = "casier2"
 
 [node name="horloge" parent="events" instance=ExtResource("6_y6uul")]
 position = Vector2(138, 346)
@@ -148,14 +144,14 @@ IDevent = "papier6"
 lenDetection = 50
 
 [node name="event17" parent="events" instance=ExtResource("6_y6uul")]
-position = Vector2(544, 599)
+position = Vector2(548, 600)
 IDevent = "papier7"
 lenDetection = 50
 
 [node name="event18" parent="events" instance=ExtResource("6_y6uul")]
-position = Vector2(354, 62)
-IDevent = "papier3"
-lenDetection = 50
+position = Vector2(352, 60)
+IDevent = "cafe"
+lenDetection = 100
 
 [node name="event19" parent="events" instance=ExtResource("6_y6uul")]
 position = Vector2(529, 375)
@@ -168,12 +164,46 @@ scale = Vector2(4, 3)
 IDevent = "compteur"
 lenDetection = 100
 
-[node name="objets" type="Node2D" parent="."]
-
-[node name="objet4" parent="objets" instance=ExtResource("5_emrwl")]
+[node name="objet4" parent="events" instance=ExtResource("5_emrwl")]
 position = Vector2(445, 426)
 IDobjet = 4
 cond = "casier1"
+
+[node name="event21" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(273, 393)
+IDevent = "poubelle"
+lenDetection = 50
+
+[node name="objet5" parent="events" instance=ExtResource("5_emrwl")]
+position = Vector2(552, 412)
+IDobjet = 3
+cond = "veste"
+
+[node name="Untitled" type="Sprite2D" parent="events"]
+position = Vector2(273.00003, 393.00003)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("6_30bbl")
+
+[node name="objet6" parent="events" instance=ExtResource("5_emrwl")]
+position = Vector2(262, 431)
+IDobjet = 6
+cond = "poubelle"
+
+[node name="objet7" parent="events" instance=ExtResource("5_emrwl")]
+position = Vector2(361, 547)
+IDobjet = 7
+cond = "eau"
+
+[node name="objet8" parent="events" instance=ExtResource("5_emrwl")]
+position = Vector2(286, 621)
+IDobjet = 1
+
+[node name="objets" type="Node2D" parent="."]
+
+[node name="objet4" parent="objets" instance=ExtResource("5_emrwl")]
+position = Vector2(574, 148)
+IDobjet = 2
+cond = "frigo"
 
 [node name="Jamyson" parent="." instance=ExtResource("4_hhsqc")]
 position = Vector2(196, 344)
