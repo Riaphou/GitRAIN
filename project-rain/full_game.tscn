@@ -1,10 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://b2cicpc1egmhi"]
+[gd_scene load_steps=4 format=3 uid="uid://b2cicpc1egmhi"]
 
 [ext_resource type="PackedScene" uid="uid://df380d7vugrcq" path="res://project-rain/game.tscn" id="1_63rp6"]
 [ext_resource type="PackedScene" uid="uid://c10os37b0m81m" path="res://project-rain/cinematique.tscn" id="2_vq57n"]
+[ext_resource type="AudioStream" uid="uid://bhmqyqfx44ky" path="res://project-rain/sonsMusiques/Nouveau_projet (2).mp3" id="3_vq57n"]
 
 [node name="FullGame" type="Node2D"]
 
 [node name="cinematique" parent="." instance=ExtResource("2_vq57n")]
 
 [node name="Game" parent="." instance=ExtResource("1_63rp6")]
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(-59, -79)
+stream = ExtResource("3_vq57n")
+autoplay = true
