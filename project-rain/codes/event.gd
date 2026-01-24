@@ -37,7 +37,7 @@ func _input_event(viewport, event, shape_idx):
 			
 			
 		elif IDevent=="jus":
-			text.queue_text("Je pari que le propriétaire a créché dedans,")
+			text.queue_text("Je pari que le propriétaire a craché dedans,")
 			text.queue_text("même si c'est plains de bonnes vitamines energétiques, je ne m'y risquerai pas.")
 			
 		elif IDevent=="":

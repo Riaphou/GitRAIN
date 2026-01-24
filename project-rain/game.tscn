@@ -37,7 +37,7 @@ scale = Vector2(2, 4)
 IDevent = "casier2"
 
 [node name="horloge" parent="events" instance=ExtResource("6_y6uul")]
-position = Vector2(75, 352)
+position = Vector2(140, 352)
 scale = Vector2(4, 4)
 IDevent = "horloge"
 lenDetection = 50
