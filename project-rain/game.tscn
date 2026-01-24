@@ -18,9 +18,10 @@ position = Vector2(-19, 0)
 scale = Vector2(2, 2)
 
 [node name="events" type="Node2D" parent="."]
+position = Vector2(1, 0)
 
 [node name="fenetre" parent="events" instance=ExtResource("6_y6uul")]
-position = Vector2(463, 63)
+position = Vector2(459, 59)
 scale = Vector2(3.985, 3.985)
 IDevent = "fenetre"
 lenDetection = 50
@@ -37,8 +38,8 @@ scale = Vector2(2, 4)
 IDevent = "casier2"
 
 [node name="horloge" parent="events" instance=ExtResource("6_y6uul")]
-position = Vector2(140, 352)
-scale = Vector2(4, 4)
+position = Vector2(138, 346)
+scale = Vector2(2.8, 2.8)
 IDevent = "horloge"
 lenDetection = 50
 
@@ -47,36 +48,132 @@ position = Vector2(130, 500)
 IDevent = "jus"
 lenDetection = 50
 
+[node name="plante" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(397, 273)
+scale = Vector2(4, 2)
+IDevent = "plante"
+lenDetection = 50
+
+[node name="event" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(202, 488.00006)
+scale = Vector2(2.5, 2.5)
+IDevent = "pc1"
+lenDetection = 50
+
+[node name="event2" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(566, 499)
+IDevent = "pc2"
+lenDetection = 50
+
+[node name="event3" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(238.00002, 50)
+scale = Vector2(3.4, 2.267)
+IDevent = "cadre"
+lenDetection = 100
+
+[node name="event4" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(596, 95)
+scale = Vector2(2, 4)
+IDevent = "frigo"
+lenDetection = 50
+
+[node name="event5" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(300, 70)
+IDevent = "pc3"
+lenDetection = 50
+
+[node name="event6" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(521, 65)
+scale = Vector2(2.5, 3)
+IDevent = "pub1"
+lenDetection = 50
+
+[node name="event7" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(72, 63.000004)
+scale = Vector2(2.5, 3.5)
+IDevent = "pub2"
+lenDetection = 100
+
+[node name="event8" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(587, 354)
+IDevent = "pc4"
+lenDetection = 100
+
+[node name="event9" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(332, 476.00003)
+scale = Vector2(2, 6)
+IDevent = "eau"
+lenDetection = 50
+
+[node name="horloge2" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(76, 353.00003)
+scale = Vector2(3.5, 3.5)
+IDevent = "asc"
+lenDetection = 50
+
+[node name="event10" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(396.00003, 364)
+scale = Vector2(3.6, 4)
+IDevent = "boss"
+lenDetection = 50
+
+[node name="event11" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(83, 189)
+IDevent = "papier1"
+lenDetection = 50
+
+[node name="event12" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(166, 258)
+IDevent = "papier2"
+lenDetection = 50
+
+[node name="event13" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(481, 238)
+IDevent = "papier3"
+lenDetection = 50
+
+[node name="event14" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(576, 262)
+IDevent = "papier4"
+lenDetection = 50
+
+[node name="event15" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(136, 560)
+IDevent = "papier5"
+lenDetection = 50
+
+[node name="event16" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(178, 603)
+IDevent = "papier6"
+lenDetection = 50
+
+[node name="event17" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(544, 599)
+IDevent = "papier7"
+lenDetection = 50
+
+[node name="event18" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(354, 62)
+IDevent = "papier3"
+lenDetection = 50
+
+[node name="event19" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(529, 375)
+IDevent = "blouson"
+lenDetection = 50
+
+[node name="event20" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(168, 62.000004)
+scale = Vector2(4, 3)
+IDevent = "compteur"
+lenDetection = 100
+
 [node name="objets" type="Node2D" parent="."]
 
 [node name="objet4" parent="objets" instance=ExtResource("5_emrwl")]
 position = Vector2(445, 426)
 IDobjet = 4
 cond = "casier1"
-
-[node name="objet5" parent="objets" instance=ExtResource("5_emrwl")]
-position = Vector2(421, 508)
-IDobjet = 5
-
-[node name="objet6" parent="objets" instance=ExtResource("5_emrwl")]
-position = Vector2(405, 145)
-IDobjet = 6
-
-[node name="objet7" parent="objets" instance=ExtResource("5_emrwl")]
-position = Vector2(182, 171)
-IDobjet = 7
-
-[node name="objet" parent="objets" instance=ExtResource("5_emrwl")]
-position = Vector2(110, 457)
-IDobjet = 2
-
-[node name="objet2" parent="objets" instance=ExtResource("5_emrwl")]
-position = Vector2(411, 600)
-IDobjet = 3
-
-[node name="objet3" parent="objets" instance=ExtResource("5_emrwl")]
-position = Vector2(275, 583)
-IDobjet = 1
 
 [node name="Jamyson" parent="." instance=ExtResource("4_hhsqc")]
 position = Vector2(196, 344)

@@ -1,6 +1,6 @@
 extends Node
 
-var nbClics = 47
+var nbClics = 50 
 var dialogInQueue = 0
 
 var onTextBox = false

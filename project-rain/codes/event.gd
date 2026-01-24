@@ -17,28 +17,100 @@ func _input_event(viewport, event, shape_idx):
 		if IDevent=="":
 			text.queue_text("Rien d'interessant ici.")
 			
+		if IDevent=="cadre":
+			text.queue_text("Employé du mois, et deux de suite !")
 			
-		elif IDevent=="fenetre":
-			text.queue_text("Fenêtre : Fermée, évidament.")
+		if IDevent=="frigo":
+			text.queue_text("J'ai bien retenu qu'il ne fallait JAMAIS mettre la nouriture dans le frigo commun.")
+			text.queue_text('certaines personnes prennent trop au serieu le sens de "commun". ')
+		
+		if IDevent=="pc1":
+			text.queue_text("Pourquoi ce mettre soit même en fond d'écran ?.")
+			text.queue_text("Il y a des idiots, mais quand même.")
+			
+		if IDevent=="pc2":
+			text.queue_text("J'èspere que ce sont ses enfants à lui !")
+			
+		if IDevent=="pc3":
+			text.queue_text("Mon ordinateur, bien propre, bien rangé.")
+		
+		if IDevent=="pc4":
+			text.queue_text("Visiblement un diaporama remplis d'anime girls.")
+			
+		if IDevent=="pub1":
+			text.queue_text("Une pub pour du parfum ? je ne sais pas ce qu'elle fait là, mais certains en aurait besoin.")
+			
+		if IDevent=="pub2":
+			text.queue_text("Une affiche promotionelle pour la sortie du quatorzième Biscuit clicker. Superbe.")
+			
+		if IDevent=="eau":
+			text.queue_text("Mes idiots de collègues font toujours des pyramides en gobelets, et maintenant on ne peut plus boire.")
+			
+		if IDevent=="asc":
+			text.queue_text("Ah, je vais descendre par l'ascenceur. Voilà ce que je dirait si ce n'etait pas un ascenceur à clé !")
+			
+		if IDevent=="boss":
+			text.queue_text("Le bureau du chef, j'espere qu'il y a des dossiers tasty crousty dedans...")
+			
+		if IDevent=="papier1":
+			text.queue_text('''Un début de lettre. "Le projet de biscuit clicker 17 avance à merveille ''')
+			text.queue_text('''Je sens qu'on a toucher à une mine d'or !" ''')
+			
+		if IDevent=="papier2":
+			text.queue_text(''' "DEVENIR MAIGRE EN QUELQUES SEMAINES ! GUIDE PRATIQUE ET Approuvé PAR LA Communauté SCIENTIFIQUE !" ''')
+			text.queue_text(''' le reste est un ramassis d’âneries. ''')
+			
+		if IDevent=="papier3":
+			text.queue_text(''' "Surtout, N'UTILISER PAS LA PRISE UNE ! elle grille vos appareils ! ''')
+			
+		if IDevent=="papier4":
+			text.queue_text(''' "La prise une marche parfaitement" ''')
+		
+		if IDevent=="papier5":
+			text.queue_text(''' C'est écrit en espagnol. Je n'essaire même pas. ''')
+			
+		if IDevent=="papier6":
+			text.queue_text(''' C'est absolument illisible ! ''')
+			
+		if IDevent=="papier7":
+			text.queue_text(''' Vu l'encoche rouge, ça m'a l'air très important. ''')
+			
+		if IDevent=="papier7":
+			text.queue_text(''' Vu l'encoche rouge, ça m'a l'air très important. ''')
+			
+		elif IDevent=="cafe":
+			text.queue_text("Personne ne peut faire une tâche aussi énorme sans le vouloir.")
+			
+		elif IDevent=="blouson":
+			text.queue_text("Aucun respect ! mettre son manteau sur la table, comme ça...")
+			
+		elif IDevent=="compteur":
+			text.queue_text("C'est le décompte avant le début de la fête, mais j'ai vraiment pas envie de voir mes collègues !")
 			
 			
 		elif IDevent=="casier1":
 			if Global.condApparition["casier1"]:
-				text.queue_text("Vous avez déjà ouvert ce casier.")
+					text.queue_text("Pleins de photos d'animaux. par contre, Je ne voit juste pas pourquoi")
+					text.queue_text("apeller son chien maman.")
 			elif Global.objetID == 3:
-				text.queue_text("Le badge ouvre le casier, vous trouvez une magnifique clef doré.")
+				text.queue_text("Une clé, youpi.")
 				Global.condApparition["casier1"] = true
 			else:
-				text.queue_text("Ce casier est verrouillé")
-			
+				text.queue_text("un casier electronique. Le bureau pourrait tout de meme faire partir ")
+				text.queue_text("le budget ailleurs que dans des boites gadgets.")
 			
 		elif IDevent=="horloge":
-			text.queue_text("12h25... ça fait un moment qu'elle a arrêté de tourner.")
+			text.queue_text("Très belle horloge, la regarder fait vraiment passer le temps.")
+			Global.nbClics -= 4
 			
 			
 		elif IDevent=="jus":
 			text.queue_text("Je pari que le propriétaire a craché dedans,")
 			text.queue_text("même si c'est plains de bonnes vitamines energétiques, je ne m'y risquerai pas.")
 			
-		elif IDevent=="":
-			text.queue_text("Canard en plastique")
+		elif IDevent=="plante":
+			if Global.objetID == 7:
+				text.queue_text("Mhmm c'est bon la plante ? tu aimes bien le glou glou ? mais qu'est ce que je raconte..")
+			else : 
+				text.queue_text("quelle belle plante... Elle est en plastique ? je ne l'ai jamais su ? et moi")
+				text.queue_text("qui lui donnait toujours les restes de boissons...")
