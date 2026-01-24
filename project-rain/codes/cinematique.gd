@@ -13,7 +13,6 @@ func _process(delta: float) -> void:
 		
 		
 	if etape == -1:
-		print("cine1")
 		$fondu.visible = true
 		$fondu.newAnimation = "perdu1"
 		$fondu.jeu = "stop"
@@ -21,7 +20,6 @@ func _process(delta: float) -> void:
 		$Timer.start()
 		etape = -2
 	elif etape == -2 and $Timer.is_stopped():
-		print("cine2")
 		$fondu.newAnimation = "perdu2"
 		$fondu.jeu = "rien"
 		$fondu.phase = 1

@@ -48,10 +48,10 @@ IDevent = "plante"
 lenDetection = 50
 
 [node name="event" parent="events" instance=ExtResource("6_y6uul")]
-position = Vector2(202, 488.00006)
-scale = Vector2(2.5, 2.5)
+position = Vector2(202, 493.00003)
+scale = Vector2(2.5, 3)
 IDevent = "pc1"
-lenDetection = 50
+lenDetection = 60
 
 [node name="event2" parent="events" instance=ExtResource("6_y6uul")]
 position = Vector2(566, 499)
@@ -192,6 +192,10 @@ cond = "veste"
 position = Vector2(446, 426)
 IDobjet = 4
 cond = "casier1"
+
+[node name="objet" parent="objets" instance=ExtResource("5_emrwl")]
+position = Vector2(535, 272)
+IDobjet = 5
 
 [node name="Jamyson" parent="." instance=ExtResource("4_hhsqc")]
 position = Vector2(170, 142)

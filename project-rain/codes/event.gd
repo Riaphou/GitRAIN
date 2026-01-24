@@ -18,82 +18,81 @@ func _input_event(viewport, event, shape_idx):
 		if IDevent=="":
 			text.queue_text("Rien d'interessant ici.")
 			
-		if IDevent=="cadre":
+		elif IDevent=="cadre":
 			text.queue_text("Employé du mois, et deux de suite !")
 			
-		if IDevent=="poubelle":
+		elif IDevent=="poubelle":
 			if Global.objetID == 2:
-				text.queue_text("Ils devraient jeter leur cochonneries seuls !")
+				text.queue_text("Ils devraient jeter leur cochonneries eux-même !")
 				text.queue_text("Beurk ! qui a laissé son gobelet ici ?")
 				Global.objetID = 0
 				Global.condApparition["poubelle"] = true
+			elif Global.objetID == 5:
+				text.queue_text("Non ! je ne jetterai pas Cookie clicker 17 à la poubelle.")
 			else:
 				text.queue_text("Elle est assez moche mais c'est bien une poubelle.")
 			
-		if IDevent=="frigo":
+		elif IDevent=="frigo":
 			text.queue_text("J'ai bien retenu qu'il ne fallait JAMAIS mettre la nouriture dans le frigo commun.")
 			text.queue_text('certaines personnes prennent trop au serieu le sens de "commun". ')
 			Global.condApparition["frigo"] = true
 		
-		if IDevent=="pc1":
+		elif IDevent=="pc1":
 			text.queue_text("Pourquoi ce mettre soit même en fond d'écran ?.")
 			text.queue_text("Il y a des idiots, mais quand même.")
 			
-		if IDevent=="pc2":
+		elif IDevent=="pc2":
 			text.queue_text("J'èspere que ce sont ses enfants à lui !")
 			
-		if IDevent=="pc3":
+		elif IDevent=="pc3":
 			text.queue_text("Mon ordinateur, bien propre, bien rangé.")
 		
-		if IDevent=="pc4":
+		elif IDevent=="pc4":
 			text.queue_text("Visiblement un diaporama remplis d'anime girls.")
 			
-		if IDevent=="pub1":
+		elif IDevent=="pub1":
 			text.queue_text("Une pub pour du parfum ? je ne sais pas ce qu'elle fait là, mais certains en aurait besoin.")
 			
-		if IDevent=="pub2":
+		elif IDevent=="pub2":
 			text.queue_text("Une affiche promotionelle pour la sortie du quatorzième Biscuit clicker. Superbe.")
 			
-		if IDevent=="eau":
+		elif IDevent=="eau":
 			text.queue_text("Mes idiots de collègues font toujours des pyramides en gobelets, et maintenant on ne peut plus boire.")
 			if Global.objetID == 6:
 				text.queue_text("J'ai rempli le verre...")
 				Global.objetID = 7
 			
-		if IDevent=="asc":
+		elif IDevent=="asc":
 			if Global.objetID == 4:
 				text.queue_text("Noooooon! Cette clef est si belle et cette serrure si parfaite,")
 				text.queue_text("comment j'aurrai pu savoir qu'elle ne rentre pas...")
 			else:
 				text.queue_text("Ah, je vais descendre par l'ascenceur. Voilà ce que je dirait si ce n'etait pas un ascenceur à clé !")
 			
-		if IDevent=="boss":
+		elif IDevent=="boss":
 			text.queue_text("Le bureau du chef, j'espere qu'il y a des dossiers tasty crousty dedans...")
 			
-		if IDevent=="papier1":
+		elif IDevent=="papier1":
 			text.queue_text('''Un début de lettre. "Le projet de biscuit clicker 17 avance à merveille ''')
 			text.queue_text('''Je sens qu'on a toucher à une mine d'or !" ''')
 			
-		if IDevent=="papier2":
+		elif IDevent=="papier2":
 			text.queue_text(''' "DEVENIR MAIGRE EN QUELQUES SEMAINES ! GUIDE PRATIQUE ET Approuvé PAR LA Communauté SCIENTIFIQUE !" ''')
 			text.queue_text(''' le reste est un ramassis d’âneries. ''')
 			
-		if IDevent=="papier3":
+		elif IDevent=="papier3":
 			text.queue_text(''' "Surtout, N'UTILISER PAS LA PRISE UNE ! elle grille vos appareils ! ''')
 			
-		if IDevent=="papier4":
+		elif IDevent=="papier4":
 			text.queue_text(''' "La prise une marche parfaitement" ''')
 		
-		if IDevent=="papier5":
+		elif IDevent=="papier5":
 			text.queue_text(''' C'est écrit en espagnol. Je n'essaire même pas. ''')
 			
-		if IDevent=="papier6":
+		elif IDevent=="papier6":
 			text.queue_text(''' C'est absolument illisible ! ''')
 			
-		if IDevent=="papier7":
-			text.queue_text(''' Vu l'encoche rouge, ça m'a l'air très important. ''')
-			
-		if IDevent=="papier7":
+		elif IDevent=="papier7":
 			text.queue_text(''' Vu l'encoche rouge, ça m'a l'air très important. ''')
 			
 		elif IDevent=="cafe":
@@ -139,8 +138,6 @@ func _input_event(viewport, event, shape_idx):
 		elif IDevent=="fenetre":
 			if Global.objetID == 4:
 				text.queue_text("Je peux enfin sortir ! Vive la liberté")
-				
+				get_parent().get_parent().get_parent().get_node("cinematique").etape = 1
 			else:
 				text.queue_text("Fenêtre fermée, bien sûr...")
-				print("fondue envoyée")
-				get_parent().get_parent().get_parent().get_node("cinematique").etape = 1

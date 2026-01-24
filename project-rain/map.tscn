@@ -332,6 +332,7 @@ position = Vector2(12, 85)
 texture = ExtResource("25_hp01d")
 
 [node name="collisions" type="Node2D" parent="."]
+visible = false
 
 [node name="StaticBody2D" type="StaticBody2D" parent="collisions"]
 

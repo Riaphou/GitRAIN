@@ -14,7 +14,7 @@ func _process(delta: float) -> void:
 	
 func _input_event(viewport, event, shape_idx):
 	if event.is_action_pressed("click") and Global.condApparition[cond]:
-		if Global.onTextBox == false and abs(position.x-Global.positionPersonage.x) < 20 and abs(position.y-Global.positionPersonage.y) < 20:
+		if Global.onTextBox == false and abs(position.x-Global.positionPersonage.x) < 50 and abs(position.y-Global.positionPersonage.y) < 50:
 			var text = get_parent().get_parent().get_node("dialogue")
 			if IDobjet==1:
 				text.queue_text("Canard en plastique nul.")
@@ -25,7 +25,7 @@ func _input_event(viewport, event, shape_idx):
 			elif IDobjet==4:
 				text.queue_text("Clef")
 			elif IDobjet==5:
-				text.queue_text("Dossier")
+				text.queue_text("Dossier du projet Cookie clicker 17, il ne faudrai pas le perdre.")
 			elif IDobjet==6:
 				text.queue_text("Un gobelet vide, avec un fond de liquide inconnu ???")
 			elif IDobjet==7:

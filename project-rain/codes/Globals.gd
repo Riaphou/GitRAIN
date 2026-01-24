@@ -13,7 +13,7 @@ var condApparition = {}
 #initialisation dans affichageCliques
 
 func restart():
-	nbClics = 99
+	nbClics = 25
 	dialogInQueue = 0
 	onTextBox = false
 	positionPersonage = Vector2(0,0)
