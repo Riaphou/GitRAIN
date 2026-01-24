@@ -1,0 +1,79 @@
+[gd_scene load_steps=12 format=3 uid="uid://c10os37b0m81m"]
+
+[ext_resource type="Script" path="res://project-rain/codes/cinematique.gd" id="1_dev01"]
+[ext_resource type="Script" path="res://project-rain/codes/fondu.gd" id="2_rfesw"]
+[ext_resource type="Texture2D" path="res://project-rain/sprites/cinematiques/PLATE_perdu.png" id="3_d655r"]
+[ext_resource type="Texture2D" path="res://project-rain/sprites/cinematiques/ECHEC.png" id="4_2j1au"]
+[ext_resource type="Texture2D" uid="uid://bjme328ixff0k" path="res://project-rain/sprites/Jamyson.png" id="5_2j1au"]
+[ext_resource type="Texture2D" path="res://project-rain/sprites/cinematiques/PLATE_good_end.png" id="6_3o6h8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2j1au"]
+atlas = ExtResource("3_d655r")
+region = Rect2(0, 0, 2432, 1624)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4kd16"]
+atlas = ExtResource("4_2j1au")
+region = Rect2(0, 0, 2560, 1710)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f8ef4"]
+atlas = ExtResource("5_2j1au")
+region = Rect2(91, 0, 13, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_88lhr"]
+atlas = ExtResource("6_3o6h8")
+region = Rect2(0, 0, 2560, 1710)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f8ef4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2j1au")
+}],
+"loop": true,
+"name": &"perdu1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4kd16")
+}],
+"loop": true,
+"name": &"perdu2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f8ef4")
+}],
+"loop": true,
+"name": &"rien",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_88lhr")
+}],
+"loop": true,
+"name": &"victoire",
+"speed": 5.0
+}]
+
+[node name="cinematique" type="Node2D"]
+script = ExtResource("1_dev01")
+
+[node name="fondu" type="ColorRect" parent="."]
+z_index = 10
+offset_left = -7.0
+offset_top = -5.0
+offset_right = 680.0
+offset_bottom = 681.0
+color = Color(0, 0, 0, 0)
+script = ExtResource("2_rfesw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="fondu"]
+position = Vector2(344, 333)
+scale = Vector2(0.2796215, 0.28363627)
+sprite_frames = SubResource("SpriteFrames_f8ef4")
+animation = &"perdu2"
+
+[node name="Timer" type="Timer" parent="."]
