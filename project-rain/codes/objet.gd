@@ -19,13 +19,13 @@ func _input_event(viewport, event, shape_idx):
 			if IDobjet==1:
 				text.queue_text("Canard en plastique nul.")
 			elif IDobjet==2:
-				text.queue_text("Erk, je suis sûr que c'est Thierry. non seulement il gâche, mais en plus il ne jette pas ses vieux trucs.")
+				text.queue_text("Erk, je suis sûr que c'est Thierry. Non seulement il gâche, mais en plus il ne jette pas ses vieux trucs.")
 			elif IDobjet==3:
-				text.queue_text("Badge rayé, il a beaucoup du servir.")
+				text.queue_text("Badge rayé, il a dû beaucoup servir.")
 			elif IDobjet==4:
 				text.queue_text("Une très belle clef dorée, elle brille.")
 			elif IDobjet==5:
-				text.queue_text("Dossier du projet Cookie clicker 17, il ne faudrai pas le perdre.")
+				text.queue_text("Dossier du projet Cookie clicker 17, il ne faudrait pas le perdre.")
 			elif IDobjet==6:
 				text.queue_text("Un gobelet vide, avec un fond de liquide inconnu ???")
 			elif IDobjet==7:
