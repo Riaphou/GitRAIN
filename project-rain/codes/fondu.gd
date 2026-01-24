@@ -7,6 +7,9 @@ var phase = 0
 var gameInstance = preload("res://project-rain/game.tscn")
 
 func _process(delta: float) -> void:
+	if Global.nbClics <= 0 and phase == 0:
+		phase = -1
+	
 	if phase == 1:
 		color.a += 4
 		if color.a >= 255 :
@@ -15,6 +18,7 @@ func _process(delta: float) -> void:
 				get_parent().parent().get_node("Game").queue_free()
 			if jeu  == "start":
 				var gameI = gameInstance.instanciate()
+				gameI.name = "Game"
 				get_parent().add_child(gameI)
 			phase = 2
 				

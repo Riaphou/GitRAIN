@@ -127,3 +127,10 @@ func _input_event(viewport, event, shape_idx):
 			else : 
 				text.queue_text("quelle belle plante... Elle est en plastique ? je ne l'ai jamais su ? et moi")
 				text.queue_text("qui lui donnait toujours les restes de boissons...")
+		
+		elif IDevent=="fenetre":
+			if Global.objetID == 4:
+				text.queue_text("Je peux enfin sortir ! Vive la liberté")
+				get_parent().get_node("cinematique").etape = 1
+			else:
+				text.queue_text("Fenêtre fermée, bien sûr...")

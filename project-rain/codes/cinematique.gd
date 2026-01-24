@@ -3,8 +3,7 @@ extends Node2D
 var etape = 0
 
 func _ready() -> void:
-	if Global.nbClics < 0 :
-		etape = -1
+	pass
 
 func _process(delta: float) -> void:
 	if etape == -1:

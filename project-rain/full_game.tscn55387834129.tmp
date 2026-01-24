@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2cicpc1egmhi"]
+
+[ext_resource type="PackedScene" uid="uid://df380d7vugrcq" path="res://project-rain/game.tscn" id="1_63rp6"]
+[ext_resource type="PackedScene" uid="uid://c10os37b0m81m" path="res://project-rain/cinematique.tscn" id="2_vq57n"]
+
+[node name="FullGame" type="Node2D"]
+
+[node name="Game" parent="." instance=ExtResource("1_63rp6")]
+
+[node name="cinematique" parent="." instance=ExtResource("2_vq57n")]

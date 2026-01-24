@@ -1,7 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://df380d7vugrcq"]
+[gd_scene load_steps=7 format=3 uid="uid://df380d7vugrcq"]
 
 [ext_resource type="PackedScene" uid="uid://campp3q3e7ojl" path="res://project-rain/map.tscn" id="1_dff61"]
-[ext_resource type="Script" uid="uid://c1jsc14oovymr" path="res://project-rain/codes/testRoomCode.gd" id="1_n1uv3"]
 [ext_resource type="PackedScene" uid="uid://pacsmfpp62jv" path="res://project-rain/boite_dialogue.tscn" id="3_fsql1"]
 [ext_resource type="PackedScene" uid="uid://b2ln7ca172tuu" path="res://project-rain/jamyson.tscn" id="4_hhsqc"]
 [ext_resource type="PackedScene" uid="uid://dtextpv2htc2s" path="res://project-rain/objet.tscn" id="5_emrwl"]
@@ -9,7 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://dct2x4cg8i4ff" path="res://project-rain/event.tscn" id="6_y6uul"]
 
 [node name="Game" type="Node2D"]
-script = ExtResource("1_n1uv3")
 
 [node name="dialogue" parent="." instance=ExtResource("3_fsql1")]
 visible = false
