@@ -14,3 +14,4 @@
 position = Vector2(-59, -79)
 stream = ExtResource("3_vq57n")
 autoplay = true
+parameters/looping = true
