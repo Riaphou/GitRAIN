@@ -21,9 +21,9 @@ func _input_event(viewport, event, shape_idx):
 			elif IDobjet==2:
 				text.queue_text("Erk, je suis sûr que c'est Thierry. non seulement il gâche, mais en plus il ne jette pas ses vieux trucs.")
 			elif IDobjet==3:
-				text.queue_text("Badge")
+				text.queue_text("Badge rayé, il a beaucoup du servir.")
 			elif IDobjet==4:
-				text.queue_text("Clef")
+				text.queue_text("Une très belle clef dorée, elle brille.")
 			elif IDobjet==5:
 				text.queue_text("Dossier du projet Cookie clicker 17, il ne faudrai pas le perdre.")
 			elif IDobjet==6:
