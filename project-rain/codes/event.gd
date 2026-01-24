@@ -4,7 +4,6 @@ extends Area2D
 @export var lenDetection = 20
 
 
-signal action_declenchee(message)
 func _ready() -> void:
 	pass
 	
@@ -25,6 +24,8 @@ func _input_event(viewport, event, shape_idx):
 		if IDevent=="poubelle":
 			if Global.objetID == 2:
 				text.queue_text("Ils devraient jeter leur cochonneries seuls !")
+				text.queue_text("Beurk ! qui a laissé son gobelet ici ?")
+				Global.objetID = 0
 				Global.condApparition["poubelle"] = true
 			else:
 				text.queue_text("Elle est assez moche mais c'est bien une poubelle.")
@@ -57,10 +58,14 @@ func _input_event(viewport, event, shape_idx):
 			text.queue_text("Mes idiots de collègues font toujours des pyramides en gobelets, et maintenant on ne peut plus boire.")
 			if Global.objetID == 6:
 				text.queue_text("J'ai rempli le verre...")
-				Global.condApparition["eau"] = true
+				Global.objetID = 7
 			
 		if IDevent=="asc":
-			text.queue_text("Ah, je vais descendre par l'ascenceur. Voilà ce que je dirait si ce n'etait pas un ascenceur à clé !")
+			if Global.objetID == 4:
+				text.queue_text("Noooooon! Cette clef est si belle et cette serrure si parfaite,")
+				text.queue_text("comment j'aurrai pu savoir qu'elle ne rentre pas...")
+			else:
+				text.queue_text("Ah, je vais descendre par l'ascenceur. Voilà ce que je dirait si ce n'etait pas un ascenceur à clé !")
 			
 		if IDevent=="boss":
 			text.queue_text("Le bureau du chef, j'espere qu'il y a des dossiers tasty crousty dedans...")
@@ -126,6 +131,7 @@ func _input_event(viewport, event, shape_idx):
 		elif IDevent=="plante":
 			if Global.objetID == 7:
 				text.queue_text("Mhmm c'est bon la plante ? tu aimes bien le glou glou ? mais qu'est ce que je raconte..")
+				Global.objetID = 6
 			else : 
 				text.queue_text("quelle belle plante... Elle est en plastique ? je ne l'ai jamais su ? et moi")
 				text.queue_text("qui lui donnait toujours les restes de boissons...")
@@ -136,4 +142,5 @@ func _input_event(viewport, event, shape_idx):
 				
 			else:
 				text.queue_text("Fenêtre fermée, bien sûr...")
-				get_parent().get_parent().get_node("cinematique").etape = 1
+				print("fondue envoyée")
+				get_parent().get_parent().get_parent().get_node("cinematique").etape = 1

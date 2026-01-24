@@ -2,26 +2,26 @@
 
 [ext_resource type="Script" uid="uid://c0817pslskjrw" path="res://project-rain/codes/cinematique.gd" id="1_dev01"]
 [ext_resource type="Script" uid="uid://cn676leoua3se" path="res://project-rain/codes/fondu.gd" id="2_rfesw"]
-[ext_resource type="Texture2D" path="res://project-rain/sprites/cinematiques/PLATE_perdu.png" id="3_d655r"]
-[ext_resource type="Texture2D" path="res://project-rain/sprites/cinematiques/ECHEC.png" id="4_2j1au"]
+[ext_resource type="Texture2D" uid="uid://cwstha20jukhc" path="res://project-rain/sprites/cinematique/PLATE_perdu.png" id="3_d655r"]
+[ext_resource type="Texture2D" uid="uid://by87ce6oapltl" path="res://project-rain/sprites/cinematique/ECHEC.png" id="4_2j1au"]
 [ext_resource type="Texture2D" uid="uid://bjme328ixff0k" path="res://project-rain/sprites/Jamyson.png" id="5_2j1au"]
-[ext_resource type="Texture2D" path="res://project-rain/sprites/cinematiques/PLATE_good_end.png" id="6_3o6h8"]
+[ext_resource type="Texture2D" uid="uid://caqepyqdaoh18" path="res://project-rain/sprites/cinematique/PLATE_good_end.png" id="6_3o6h8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2j1au"]
 atlas = ExtResource("3_d655r")
-region = Rect2(0, 0, 2432, 1624)
+region = Rect2(0, 0, 2432, 2560)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4kd16"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_3o6h8"]
 atlas = ExtResource("4_2j1au")
-region = Rect2(0, 0, 2560, 1710)
+region = Rect2(0, 0, 2560, 2560)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f8ef4"]
 atlas = ExtResource("5_2j1au")
 region = Rect2(91, 0, 13, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_88lhr"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_4kd16"]
 atlas = ExtResource("6_3o6h8")
-region = Rect2(0, 0, 2560, 1710)
+region = Rect2(0, 0, 2560, 2560)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_f8ef4"]
 animations = [{
@@ -35,7 +35,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_4kd16")
+"texture": SubResource("AtlasTexture_3o6h8")
 }],
 "loop": true,
 "name": &"perdu2",
@@ -51,7 +51,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_88lhr")
+"texture": SubResource("AtlasTexture_4kd16")
 }],
 "loop": true,
 "name": &"victoire",
@@ -63,6 +63,7 @@ script = ExtResource("1_dev01")
 
 [node name="fondu" type="ColorRect" parent="."]
 z_index = 10
+z_as_relative = false
 offset_left = -7.0
 offset_top = -5.0
 offset_right = 680.0
@@ -71,10 +72,12 @@ color = Color(0, 0, 0, 0)
 script = ExtResource("2_rfesw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="fondu"]
-position = Vector2(344, 333)
-scale = Vector2(0.2796215, 0.28363627)
+z_as_relative = false
+position = Vector2(343.9901, 339.07828)
+scale = Vector2(0.278791, 0.28279385)
 sprite_frames = SubResource("SpriteFrames_f8ef4")
-animation = &"perdu2"
+animation = &"perdu1"
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 8.0
+one_shot = true

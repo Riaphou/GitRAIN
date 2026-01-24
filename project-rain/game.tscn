@@ -93,10 +93,10 @@ IDevent = "pc4"
 lenDetection = 100
 
 [node name="event9" parent="events" instance=ExtResource("6_y6uul")]
-position = Vector2(332, 476.00003)
+position = Vector2(332, 479.00003)
 scale = Vector2(2, 6)
 IDevent = "eau"
-lenDetection = 50
+lenDetection = 60
 
 [node name="horloge2" parent="events" instance=ExtResource("6_y6uul")]
 position = Vector2(76, 353.00003)
@@ -111,12 +111,12 @@ IDevent = "boss"
 lenDetection = 50
 
 [node name="event11" parent="events" instance=ExtResource("6_y6uul")]
-position = Vector2(74, 518)
+position = Vector2(62, 228)
 IDevent = "papier1"
 lenDetection = 50
 
 [node name="event12" parent="events" instance=ExtResource("6_y6uul")]
-position = Vector2(477, 637)
+position = Vector2(123, 233)
 IDevent = "papier2"
 lenDetection = 50
 
@@ -147,6 +147,7 @@ lenDetection = 50
 
 [node name="event18" parent="events" instance=ExtResource("6_y6uul")]
 position = Vector2(352, 60)
+scale = Vector2(3, 2)
 IDevent = "cafe"
 lenDetection = 100
 
@@ -161,42 +162,37 @@ scale = Vector2(4, 3)
 IDevent = "compteur"
 lenDetection = 100
 
-[node name="objet4" parent="events" instance=ExtResource("5_emrwl")]
-position = Vector2(445, 426)
-IDobjet = 4
-cond = "casier1"
-
 [node name="event21" parent="events" instance=ExtResource("6_y6uul")]
-position = Vector2(109, 269)
+position = Vector2(68, 266)
 IDevent = "poubelle"
 lenDetection = 50
 
-[node name="objet5" parent="events" instance=ExtResource("5_emrwl")]
-position = Vector2(552, 412)
-IDobjet = 3
-cond = "veste"
-
-[node name="objet6" parent="events" instance=ExtResource("5_emrwl")]
-position = Vector2(262, 431)
-IDobjet = 6
-cond = "poubelle"
-
-[node name="objet7" parent="events" instance=ExtResource("5_emrwl")]
-position = Vector2(361, 547)
-IDobjet = 7
-cond = "eau"
-
-[node name="objet8" parent="events" instance=ExtResource("5_emrwl")]
-position = Vector2(286, 621)
-IDobjet = 1
-
 [node name="objets" type="Node2D" parent="."]
 
-[node name="objet4" parent="objets" instance=ExtResource("5_emrwl")]
+[node name="nouilles" parent="objets" instance=ExtResource("5_emrwl")]
 position = Vector2(574, 148)
 IDobjet = 2
 cond = "frigo"
 
+[node name="objet8" parent="objets" instance=ExtResource("5_emrwl")]
+position = Vector2(287, 621)
+IDobjet = 1
+
+[node name="gobelet" parent="objets" instance=ExtResource("5_emrwl")]
+position = Vector2(114, 269)
+IDobjet = 6
+cond = "poubelle"
+
+[node name="badge" parent="objets" instance=ExtResource("5_emrwl")]
+position = Vector2(553, 412)
+IDobjet = 3
+cond = "veste"
+
+[node name="clef" parent="objets" instance=ExtResource("5_emrwl")]
+position = Vector2(446, 426)
+IDobjet = 4
+cond = "casier1"
+
 [node name="Jamyson" parent="." instance=ExtResource("4_hhsqc")]
-position = Vector2(196, 344)
+position = Vector2(170, 142)
 scale = Vector2(2, 2)
