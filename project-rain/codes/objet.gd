@@ -9,11 +9,11 @@ func _ready() -> void:
 		visible = false
 
 func _process(delta: float) -> void:
-	pass
+	if Input.is_action_just_pressed("click") and Global.condApparition[cond]:
+		visible = true
 	
 func _input_event(viewport, event, shape_idx):
 	if event.is_action_pressed("click") and Global.condApparition[cond]:
-		visible = true
 		if Global.onTextBox == false and abs(position.x-Global.positionPersonage.x) < 20 and abs(position.y-Global.positionPersonage.y) < 20:
 			var text = get_parent().get_parent().get_node("dialogue")
 			if IDobjet==1:

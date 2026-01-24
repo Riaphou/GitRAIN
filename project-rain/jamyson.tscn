@@ -140,7 +140,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_up3jd"]
-size = Vector2(16, 11)
+size = Vector2(16, 10)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r8o2g"]
 atlas = ExtResource("3_wmsex")
@@ -242,19 +242,18 @@ animations = [{
 }]
 
 [node name="Jamyson" type="CharacterBody2D"]
-position = Vector2(0, -9)
 script = ExtResource("1_kstw8")
 
 [node name="AnimationPlayer" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -10)
 sprite_frames = SubResource("SpriteFrames_ryiaq")
 animation = &"down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 9.5)
 shape = SubResource("RectangleShape2D_up3jd")
 
 [node name="objetImage" type="AnimatedSprite2D" parent="."]
 z_index = 1
-position = Vector2(0, -22)
+position = Vector2(0, -32)
 sprite_frames = SubResource("SpriteFrames_el8nd")
 animation = &"7"

@@ -10,36 +10,6 @@
 [node name="Game" type="Node2D"]
 script = ExtResource("1_n1uv3")
 
-[node name="objets" type="Node2D" parent="."]
-
-[node name="objet4" parent="objets" instance=ExtResource("5_emrwl")]
-position = Vector2(411, 616)
-IDobjet = 4
-
-[node name="objet5" parent="objets" instance=ExtResource("5_emrwl")]
-position = Vector2(421, 508)
-IDobjet = 5
-
-[node name="objet6" parent="objets" instance=ExtResource("5_emrwl")]
-position = Vector2(405, 145)
-IDobjet = 6
-
-[node name="objet7" parent="objets" instance=ExtResource("5_emrwl")]
-position = Vector2(182, 171)
-IDobjet = 7
-
-[node name="objet" parent="objets" instance=ExtResource("5_emrwl")]
-position = Vector2(110, 457)
-IDobjet = 2
-
-[node name="objet2" parent="objets" instance=ExtResource("5_emrwl")]
-position = Vector2(452, 435)
-IDobjet = 3
-
-[node name="objet3" parent="objets" instance=ExtResource("5_emrwl")]
-position = Vector2(275, 583)
-IDobjet = 1
-
 [node name="dialogue" parent="." instance=ExtResource("3_fsql1")]
 visible = false
 
@@ -59,6 +29,7 @@ lenDetection = 50
 position = Vector2(444, 374)
 scale = Vector2(2, 4)
 IDevent = "casier1"
+lenDetection = 50
 
 [node name="casier2" parent="events" instance=ExtResource("6_y6uul")]
 position = Vector2(477, 373)
@@ -75,6 +46,37 @@ lenDetection = 50
 position = Vector2(130, 500)
 IDevent = "jus"
 lenDetection = 50
+
+[node name="objets" type="Node2D" parent="."]
+
+[node name="objet4" parent="objets" instance=ExtResource("5_emrwl")]
+position = Vector2(445, 426)
+IDobjet = 4
+cond = "casier1"
+
+[node name="objet5" parent="objets" instance=ExtResource("5_emrwl")]
+position = Vector2(421, 508)
+IDobjet = 5
+
+[node name="objet6" parent="objets" instance=ExtResource("5_emrwl")]
+position = Vector2(405, 145)
+IDobjet = 6
+
+[node name="objet7" parent="objets" instance=ExtResource("5_emrwl")]
+position = Vector2(182, 171)
+IDobjet = 7
+
+[node name="objet" parent="objets" instance=ExtResource("5_emrwl")]
+position = Vector2(110, 457)
+IDobjet = 2
+
+[node name="objet2" parent="objets" instance=ExtResource("5_emrwl")]
+position = Vector2(411, 600)
+IDobjet = 3
+
+[node name="objet3" parent="objets" instance=ExtResource("5_emrwl")]
+position = Vector2(275, 583)
+IDobjet = 1
 
 [node name="Jamyson" parent="." instance=ExtResource("4_hhsqc")]
 position = Vector2(196, 344)

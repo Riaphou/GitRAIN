@@ -74,10 +74,10 @@ func change_state(next_stat):  # change l'etat
 	current_state = next_stat
 	match  current_state: # je crois qu'a partire d'ici c juste du débbug
 		state.ready:
-			print("ready")
+			print("-- ready")
 		state.reading:
-			print("reading")
+			print("-- reading")
 		state.finished:
-			print("finished")
+			print("-- finished")
 			
 	
