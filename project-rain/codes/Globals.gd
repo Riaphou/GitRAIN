@@ -1,5 +1,7 @@
 extends Node
 
+var firstRun = true
+
 var nbClics = 0
 var dialogInQueue = 0
 
@@ -13,7 +15,7 @@ var condApparition = {}
 #initialisation dans affichageCliques
 
 func restart():
-	nbClics = 25
+	nbClics = 34
 	dialogInQueue = 0
 	onTextBox = false
 	positionPersonage = Vector2(0,0)

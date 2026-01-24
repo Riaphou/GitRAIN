@@ -13,6 +13,7 @@ func _process(delta: float) -> void:
 		
 		
 	if etape == -1:
+		Global.firstRun = false
 		$fondu.visible = true
 		$fondu.newAnimation = "perdu1"
 		$fondu.jeu = "stop"
