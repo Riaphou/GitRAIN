@@ -18,7 +18,14 @@ func _input_event(viewport, event, shape_idx):
 			text.queue_text("Rien d'interessant ici.")
 		elif IDevent=="fenetre":
 			text.queue_text("Fenêtre : Fermée, évidament.")
-		elif IDevent=="":
+		elif IDevent=="casier1":
+			if Global.condApparition["casier1"]:
+				text.queue_text("Vous avez déjà ouvert ce casier.")
+			elif Global.objetID == 4:
+				text.queue_text("Le badge ouvre le casier")
+				Global.condApparition["casier1"] = true
+			else:
+				text.queue_text("Ce casier est verrouillé")
 			text.queue_text("Canard en plastique")
 		elif IDevent=="":
 			text.queue_text("Canard en plastique")

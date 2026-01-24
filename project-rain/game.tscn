@@ -55,6 +55,16 @@ scale = Vector2(3.985, 3.985)
 IDevent = "fenetre"
 lenDetection = 50
 
+[node name="casier1" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(444, 374)
+scale = Vector2(2, 4)
+IDevent = "casier1"
+
+[node name="casier2" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(477, 373)
+scale = Vector2(2, 4)
+IDevent = "casier2"
+
 [node name="Jamyson" parent="." instance=ExtResource("4_hhsqc")]
 position = Vector2(196, 344)
 scale = Vector2(2, 2)
