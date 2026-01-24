@@ -65,6 +65,17 @@ position = Vector2(477, 373)
 scale = Vector2(2, 4)
 IDevent = "casier2"
 
+[node name="horloge" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(75, 352)
+scale = Vector2(4, 4)
+IDevent = "horloge"
+lenDetection = 50
+
+[node name="jus" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(130, 500)
+IDevent = "jus"
+lenDetection = 50
+
 [node name="Jamyson" parent="." instance=ExtResource("4_hhsqc")]
 position = Vector2(196, 344)
 scale = Vector2(2, 2)

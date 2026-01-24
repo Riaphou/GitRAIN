@@ -16,8 +16,12 @@ func _input_event(viewport, event, shape_idx):
 		
 		if IDevent=="":
 			text.queue_text("Rien d'interessant ici.")
+			
+			
 		elif IDevent=="fenetre":
 			text.queue_text("Fenêtre : Fermée, évidament.")
+			
+			
 		elif IDevent=="casier1":
 			if Global.condApparition["casier1"]:
 				text.queue_text("Vous avez déjà ouvert ce casier.")
@@ -27,9 +31,15 @@ func _input_event(viewport, event, shape_idx):
 			else:
 				text.queue_text("Ce casier est verrouillé")
 			text.queue_text("Canard en plastique")
-		elif IDevent=="":
-			text.queue_text("Canard en plastique")
-		elif IDevent=="":
-			text.queue_text("Canard en plastique")
+			
+			
+		elif IDevent=="horloge":
+			text.queue_text("12h25... ça fait un moment qu'elle a arrêté de tourner.")
+			
+			
+		elif IDevent=="jus":
+			text.queue_text("Je pari que le propriétaire a créché dedans,")
+			text.queue_text("même si c'est plains de bonnes vitamines energétiques, je ne m'y risquerai pas.")
+			
 		elif IDevent=="":
 			text.queue_text("Canard en plastique")
