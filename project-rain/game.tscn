@@ -1,48 +1,59 @@
-[gd_scene load_steps=6 format=3 uid="uid://df380d7vugrcq"]
+[gd_scene load_steps=7 format=3 uid="uid://df380d7vugrcq"]
 
 [ext_resource type="PackedScene" uid="uid://campp3q3e7ojl" path="res://project-rain/map.tscn" id="1_dff61"]
 [ext_resource type="Script" uid="uid://c1jsc14oovymr" path="res://project-rain/codes/testRoomCode.gd" id="1_n1uv3"]
 [ext_resource type="PackedScene" uid="uid://pacsmfpp62jv" path="res://project-rain/boite_dialogue.tscn" id="3_fsql1"]
 [ext_resource type="PackedScene" uid="uid://b2ln7ca172tuu" path="res://project-rain/jamyson.tscn" id="4_hhsqc"]
 [ext_resource type="PackedScene" uid="uid://dtextpv2htc2s" path="res://project-rain/objet.tscn" id="5_emrwl"]
+[ext_resource type="PackedScene" uid="uid://dct2x4cg8i4ff" path="res://project-rain/event.tscn" id="6_y6uul"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_n1uv3")
 
-[node name="objet" parent="." instance=ExtResource("5_emrwl")]
+[node name="objets" type="Node2D" parent="."]
+
+[node name="objet4" parent="objets" instance=ExtResource("5_emrwl")]
+position = Vector2(411, 616)
+IDobjet = 4
+
+[node name="objet5" parent="objets" instance=ExtResource("5_emrwl")]
+position = Vector2(421, 508)
+IDobjet = 5
+
+[node name="objet6" parent="objets" instance=ExtResource("5_emrwl")]
+position = Vector2(405, 145)
+IDobjet = 6
+
+[node name="objet7" parent="objets" instance=ExtResource("5_emrwl")]
+position = Vector2(182, 171)
+IDobjet = 7
+
+[node name="objet" parent="objets" instance=ExtResource("5_emrwl")]
 position = Vector2(110, 457)
 IDobjet = 2
 
-[node name="objet2" parent="." instance=ExtResource("5_emrwl")]
+[node name="objet2" parent="objets" instance=ExtResource("5_emrwl")]
 position = Vector2(452, 435)
 IDobjet = 3
 
-[node name="objet3" parent="." instance=ExtResource("5_emrwl")]
+[node name="objet3" parent="objets" instance=ExtResource("5_emrwl")]
 position = Vector2(275, 583)
 IDobjet = 1
 
 [node name="dialogue" parent="." instance=ExtResource("3_fsql1")]
 visible = false
 
-[node name="objet4" parent="." instance=ExtResource("5_emrwl")]
-position = Vector2(411, 616)
-IDobjet = 4
-
-[node name="objet5" parent="." instance=ExtResource("5_emrwl")]
-position = Vector2(421, 508)
-IDobjet = 5
-
-[node name="objet6" parent="." instance=ExtResource("5_emrwl")]
-position = Vector2(405, 145)
-IDobjet = 6
-
-[node name="objet7" parent="." instance=ExtResource("5_emrwl")]
-position = Vector2(182, 171)
-IDobjet = 7
-
 [node name="map" parent="." instance=ExtResource("1_dff61")]
 position = Vector2(-19, 0)
 scale = Vector2(2, 2)
+
+[node name="events" type="Node2D" parent="."]
+
+[node name="fenetre" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(463, 63)
+scale = Vector2(3.985, 3.985)
+IDevent = "fenetre"
+lenDetection = 50
 
 [node name="Jamyson" parent="." instance=ExtResource("4_hhsqc")]
 position = Vector2(196, 344)

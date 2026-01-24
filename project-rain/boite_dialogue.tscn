@@ -53,7 +53,7 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme_override_fonts/font = SubResource("FontVariation_uahc0")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 30
 
 [node name="text" type="Label" parent="textBoxContainer/MarginContainer/HBoxContainer"]
 custom_minimum_size = Vector2(0, 7)
@@ -61,7 +61,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
 theme_override_fonts/font = SubResource("FontVariation_uahc0")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 40
 text = "sdsddssd"
 autowrap_mode = 3
 clip_text = true
@@ -71,4 +71,4 @@ layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 8
 theme_override_fonts/font = SubResource("FontVariation_uahc0")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 30

@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dct2x4cg8i4ff"]
+
+[ext_resource type="Script" uid="uid://cxm85hx53fgvd" path="res://project-rain/codes/event.gd" id="1_ktk8a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_orfgr"]
+size = Vector2(16, 16)
+
+[node name="event" type="Area2D"]
+scale = Vector2(2, 2)
+script = ExtResource("1_ktk8a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_orfgr")
