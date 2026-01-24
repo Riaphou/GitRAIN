@@ -47,6 +47,12 @@ position = Vector2(130, 500)
 IDevent = "jus"
 lenDetection = 50
 
+[node name="event" parent="events" instance=ExtResource("6_y6uul")]
+position = Vector2(533, 376)
+scale = Vector2(3, 2)
+IDevent = "manteau"
+lenDetection = 50
+
 [node name="objets" type="Node2D" parent="."]
 
 [node name="objet4" parent="objets" instance=ExtResource("5_emrwl")]
